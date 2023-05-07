@@ -1,0 +1,223 @@
+.aboutUs {
+  /*background: red;*/
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.about {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  gap: 2px;
+}
+
+.aboutContent {
+  /*  background: blue;*/
+  width: 450px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.aboutMe {
+  width: 300px;
+  height: 400px;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, var(--color-primary));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: red;*/
+  box-shadow: 4px 4px 10px #000;
+  /*
+              inset 4px 4px 10px var(--color-primary),
+              4px 4px 5px var(--color-primary),
+              inset -4px -4px 10px var(--color-primary),
+              inset 4px 4px 70px black;
+  /* margin: 2rem auto;*/
+}
+
+.aboutMeImg {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  transform-origin: right top;
+  transform: rotate(10deg);
+  background: linear-gradient(130deg, var(--color-primary), transparent, rgba(0, 0, 0, 0.9)), url("../../img/bg.png") no-repeat;
+  /* transform-origin: left;*/
+  background-size: 120% 110%;
+  box-shadow: 4px 4px 10px #000;
+  transition: var(--transition-all);
+  margin: 0 0 0 1.8rem;
+}
+
+.aboutMeImg img {
+  width: 100%;
+}
+
+.aboutMeImg:hover {
+  transform-origin: right top;
+  transform: rotate(0deg);
+  margin: 0;
+}
+
+.aboutCards {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5rem auto;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5rem auto;
+  overflow-x: hidden;
+}
+
+.aboutCard {
+  width: 380px;
+  margin: 0.8rem auto;
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  transition: var(--transition-all);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 15px rgba(255, 255, 255, 0.15), inset -3px -3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.aboutCard h5 {
+  font-size: 2.5rem;
+  color: #ccc;
+  word-break: all;
+  font-weight: bold;
+  font-family: Georgia;
+}
+
+.aboutCard:hover {
+  background: transparent;
+  border-color: var(--color-bg-variant);
+  cursor: default;
+}
+
+.aboutIcon {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.aboutCard small {
+  font-size: 1.5rem;
+  font-weight: bold;
+  word-break: all;
+  color: var(--color-light);
+}
+
+.btns {
+  font-size: 1.2rem;
+  margin: 1.2rem auto 0;
+  padding: 1.2rem 1rem;
+  border-radius: 1.5rem;
+  color: var(--color-light);
+  background: var(--color-bg-variant);
+  text-shadow: 2px 2px 4px var(--color-bg);
+  font-weight: 800;
+}
+
+.btns:hover {
+  box-shadow: 2px 2px 10px var(--color-bg-variant);
+}
+
+/*
+.aboutContent{
+  width:100%;
+}*/
+.pera {
+  /* margin: 0.75rem 1.2rem;*/
+  background: va(--color-bg-variant);
+  border: 1px solid var(--color-light);
+  margin: 1.2rem auto;
+  color: #ccc;
+  font-size: 0.8rem;
+  overflow-x: hidden;
+  align-items: center;
+}
+
+.pera p {
+  width: 100%;
+  margin: 2rem auto 1.2rem;
+  padding: 2rem 4rem;
+  text-align: left;
+  word-break: all;
+}
+
+.quali {
+  color: var(--color-primary);
+  text-align: center;
+  margin: 1.2rem 4rem;
+}
+
+/* ==== landscape mode =====*/
+@media (orientation: landscape) {
+  .me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*====medium Screen ===*/
+@media screen and (max-width: 1024px) {
+  .aboutMe {
+    margin-top: -5.5rem;
+  }
+  .aboutCards {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+  }
+  .aboutCards .aboutCard {
+    /* background: red;*/
+    margin-top: 2rem;
+  }
+  .aboutMe {
+    margin: 5rem auto;
+  }
+}
+
+/*==== small Screen ===*/
+@media screen and (max-width: 900px) {
+  /*.aboutUs{
+    margin-top: -3.5rem;
+  }*/
+  .aboutMe {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto 2.5rem;
+    margin: 4rem auto;
+  }
+  .aboutMe .aboutMeImg {
+    background: linear-gradient(130deg, var(--color-primary), transparent, rgba(0, 0, 0, 0.9)), url("../../img/logo.png");
+    background-position: left;
+    background-attachment: fixed;
+  }
+  .aboutCards {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+  }
+  .aboutCard h5 {
+    font-size: 2rem;
+  }
+  .aboutCard small {
+    font-size: 1.2rem;
+  }
+  .aboutContent {
+    text-align: center;
+  }
+  .aboutContent p {
+    margin: 1.5rem 0;
+  }
+  .pera p {
+    font-size: 1.4rem;
+  }
+}

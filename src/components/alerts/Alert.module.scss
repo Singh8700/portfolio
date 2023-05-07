@@ -1,0 +1,28 @@
+.success{
+  width:100%;
+  padding: 1.5rem;
+  position: fixed;
+  top:0.2rem;
+  background:green;
+  z-index: 99;
+  transition: all 0.2s linear;
+}
+.bar{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:5px;
+  background: white;
+  animation: lefts
+  1.5s linear 1;
+  transition: all 0.2s linear;
+}
+@keyframes lefts{
+  to{
+    width:0%;
+  }
+  from{
+    width:100%;
+  }
+}

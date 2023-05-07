@@ -1,0 +1,92 @@
+section {
+  margin-top: 1.5rem;
+}
+
+.containers {
+  margin-top: -2rem;
+  overflow-x: hidden;
+}
+
+.cards {
+  width: 100%;
+  margin: 1rem auto;
+  /*background: red;*/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 2rem;*/
+  /* padding: 2rem auto;*/
+}
+
+.cards .card {
+  width: 100%;
+  height: max-content;
+  margin: 2rem auto;
+  background: var(--color-bg-variant);
+  padding: 2rem 1.4rem;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 15px rgba(255, 255, 255, 0.15), inset -3px -3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.cards .card .imgs {
+  width: 95%;
+  height: 285px;
+  margin: auto;
+  /* border: 1px solid black;*/
+}
+
+.cards .card .imgs img {
+  height: 100%;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 5px var(--color-bg);
+}
+
+.cards .card .title {
+  margin: 0 auto;
+  text-align: center;
+  /*background: black;*/
+  font-family: Georgia;
+  padding: 0 auto;
+}
+
+.cards .card .title h3 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  word-break: all;
+}
+
+.cards .card .title h5 {
+  font-size: 1rem;
+  color: var(--color-light);
+}
+
+.cards .card .title a {
+  padding: 0.2rem 0.5rem;
+}
+
+.cl {
+  width: 300px;
+  margin: 1.2rem auto;
+}
+
+/*==== small Screen ===*/
+@media screen and (max-width: 1080px) {
+  .cards {
+    width: 100%;
+  }
+  .cards .cl {
+    width: 350px;
+  }
+}
+
+/*==== small Screen ===*/
+@media screen and (max-width: 900px) {
+  .cards {
+    width: 100%;
+  }
+  .cards .cl {
+    width: 400px;
+  }
+}

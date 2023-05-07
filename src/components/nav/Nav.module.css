@@ -1,0 +1,126 @@
+nav {
+  background: rgba(0, 0, 0, 0.6);
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1.2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  transition: var(--transition-all);
+  backdrop-filter: blur(15px);
+}
+
+.navigation {
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 2rem;
+  width: 70%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.navigation li {
+  position: relative;
+  width: 5rem;
+  height: 3rem;
+}
+
+.navigation li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /*position: relative;*/
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navigation li a .icon {
+  position: absolute;
+  font-size: 1.7em;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+.navigation li a .title {
+  position: absolute;
+  font-size: 0.75rem;
+  transform: translateY(1.2rem);
+  padding: 0.2px 0.5rem;
+  background: #fff;
+  opacity: 0;
+  color: #000;
+  font-weight: 900;
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  transition: var(--transition-all);
+}
+
+.navigation li a .icon:before {
+  content: ' ';
+  position: absolute;
+  inset: 0.3rem;
+  background: #2f363e;
+  border-radius: 50%;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25), inset 2px 2px 3px rgba(255, 255, 255, 0.25), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+  transition: var(--transition-all);
+  z-index: -1;
+}
+
+.navigation li.active {
+  /*background: red;*/
+  width: 200px;
+}
+
+.navigation li.active .icon {
+  background: var(--color-btn);
+  color: #fff;
+  transform: translateY(-2.5rem);
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25), inset 2px 2px 3px rgba(255, 255, 255, 0.25), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navigation li.active .icon:before {
+  transform: scale(1);
+}
+
+.navigation li.active .title {
+  opacity: 1;
+  transform: translateY(-0.1rem);
+}
+
+.navigation li.active:before {
+  content: ' ';
+  position: absolute;
+  top: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--color-btn);
+  box-shadow: 0px 0px 5px var(--color-btn), 0px 0px 10px var(--color-btn), 0px 0px 15px var(--color-btn), 0px 0px 20px var(--color-btn), 0px 0px 25px var(--color-btn);
+}
+
+/*==== small Screen ===*/
+@media screen and (max-width: 900px) {
+  nav {
+    bottom: 1rem;
+  }
+}
