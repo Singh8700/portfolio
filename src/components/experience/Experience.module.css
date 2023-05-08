@@ -1,6 +1,8 @@
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
   text-align: center;
   font-family: Georgia;
@@ -9,7 +11,7 @@
 }
 
 .container > div {
-  width: 300px;
+  width: 600px;
   background: var(--color-bg-variant);
   text-align: center;
   padding: 2rem 3rem;
@@ -29,7 +31,7 @@
   text-align: centre;
   font-weight: 900;
   /* margin-bottom: 2rem;*/
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   color: var(--color-primary);
   text-shadow: 2px 2px 4px black;
   font-family: Georgia;
@@ -38,7 +40,7 @@
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 1.5rem;
+  row-gap: 1.8rem;
 }
 
 .details {
@@ -57,7 +59,7 @@
 }
 
 .small {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
   font-family: Georgia;
   color: #aaa;
@@ -86,7 +88,7 @@
 /*==== small Screen ===*/
 @media screen and (max-width: 900px) {
   .container > div h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .content {
     grid-template-columns: 1fr;
@@ -96,9 +98,9 @@
     text-align: center;
   }
   .content .details h4 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .content .details .small {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 }
