@@ -30,9 +30,10 @@
   color: #aaa;
 }
 
-.h5 {
-  background: red;
-  font-weight: bold;
+.option h5 {
+  font-size: 3.5rem;
+  color: #eee;
+  overflow-x: hidden;
 }
 
 .option:hover {

@@ -8,7 +8,6 @@
   text-decoration:none;
 }
 :root{
-  font-size: 70%;
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
@@ -74,11 +73,7 @@ body {
   }
 }
 h1,h2,h3,h4,h5{
-  font-weight: 600;
-  font-family: Georgia;
-}
-h5{
-  font-size: 2rem;
+  font-weight: 500;
 }
 h1{
   font-size: 2.5rem;
@@ -91,8 +86,6 @@ section > h2, section > h5{
   color: var(--color-light);
 }
 section > h2{
-  font-size: 3.5rem;
-  font-weight: bold;
   color:var(--color-primary);
   margin-bottom: 3rem;
 }
@@ -123,7 +116,7 @@ a:hover{
   }
   .btn{
   width: max-content;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-family: Georgia;
   font-weight: bold;
   display: inline-block;
@@ -161,10 +154,7 @@ img{
   }
 }
 /*==== small Screen ===*/
-@media screen and (max-width: 900px){
-  :root{
-    font-size: 51%;
-  }
+@media screen and (max-width: 600px){
   .container{
     width: var(--container-width-sm);
   }

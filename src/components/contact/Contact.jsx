@@ -30,7 +30,7 @@ const Contact=(props)=>{
   return(
     <section id="contact" className="transformX">
       <Animation/>
-      <h5 className={`scales`}>Get In Touch</h5>
+      <h5 className="scales">Get In Touch</h5>
       <h2 className="scales">Contact Me</h2>
       
       <div className={`scales ${style.container}`}>
@@ -42,8 +42,8 @@ const Contact=(props)=>{
          <span className={style.icon}>
             
          </span>
-         <h4 style={{fontSize:"2.8rem"}}>{element.title}</h4>
-         <h5 style={{fontSize:"2rem"}}>{element.add}</h5>
+         <h4>{element.title}</h4>
+         <h5>{element.add}</h5>
          <a href={element.link} traget="__blank" className="btn btn-primary">Send Me</a>
        </article>
      </div>
