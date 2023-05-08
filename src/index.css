@@ -8,7 +8,7 @@
   text-decoration:none;
 }
 :root{
-  font-size: 62.5%;
+  font-size: 70%;
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
@@ -161,7 +161,10 @@ img{
   }
 }
 /*==== small Screen ===*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 900px){
+  :root{
+    font-size: 51%;
+  }
   .container{
     width: var(--container-width-sm);
   }

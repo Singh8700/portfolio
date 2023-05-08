@@ -1,6 +1,8 @@
 .container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   gap:2rem;
   text-align: center;
   font-family: Georgia;
@@ -8,7 +10,7 @@
   padding-bottom: 5rem;
 }
 .container > div{
-  width: 300px;
+  width: 500px;
   background: var(--color-bg-variant);
   text-align: center;
   padding: 2rem 3rem;
