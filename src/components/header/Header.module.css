@@ -77,7 +77,6 @@ header {
   transform-origin: left;
   transform: perspective(500px) rotateY(0deg);
   border-radius: 11rem 11rem 0 0;
-  animation: updown 2s alternate infinite;
   box-shadow: -4px -4px 50px var(--color-bg), inset 4px 4px 10px var(--color-primary), 4px 4px 5px var(--color-primary), inset -4px -4px 10px var(--color-primary), inset 4px 4px 70px black;
   transition: var(--transition-all);
 }
@@ -111,15 +110,6 @@ h1 {
   }
   from {
     width: 100%;
-  }
-}
-
-@keyframes updown {
-  0% {
-    transform: perspective(600px) rotateY(5deg);
-  }
-  100% {
-    transform: perspective(600px) rotateY(-10deg);
   }
 }
 
@@ -160,7 +150,7 @@ h1 {
 @media screen and (max-width: 900px) {
   header {
     height: 100vh;
-    padding: 5rem;
+    padding: 9rem;
     margin: 0 auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9), black), url("../../img/logo.png");
     background-attachment: fixed;

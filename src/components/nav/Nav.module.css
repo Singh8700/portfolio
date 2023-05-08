@@ -13,6 +13,7 @@ nav {
   display: flex;
   gap: 0.8rem;
   width: 70%;
+  height: 5vh;
   border-radius: 3rem;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
   transition: var(--transition-all);
@@ -23,7 +24,7 @@ nav {
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
   border-radius: 2rem;
   width: 70%;
-  height: 4rem;
+  height: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -49,8 +50,8 @@ nav {
 .navigation li a .icon {
   position: absolute;
   font-size: 2.5rem;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,9 +62,9 @@ nav {
 
 .navigation li a .title {
   position: absolute;
-  font-size: 1.2rem;
-  transform: translateY(1.2rem);
-  padding: 0.1px 0.3rem;
+  font-size: 1.6rem;
+  transform: translateY(2rem);
+  padding: 0.4px 0.8rem;
   background: #fff;
   opacity: 0;
   color: #000;
@@ -93,7 +94,7 @@ nav {
 .navigation li.active .icon {
   background: var(--color-btn);
   color: #fff;
-  transform: translateY(-3.5rem);
+  transform: translateY(-5rem);
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25), inset 2px 2px 3px rgba(255, 255, 255, 0.25), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -103,17 +104,17 @@ nav {
 
 .navigation li.active .title {
   opacity: 1;
-  transform: translateY(-0.2rem);
+  transform: translateY(-0.5rem);
 }
 
 .navigation li.active:before {
   content: ' ';
   position: absolute;
-  top: 2.8rem;
+  top: 3rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   background: var(--color-btn);
   box-shadow: 0px 0px 5px var(--color-btn), 0px 0px 10px var(--color-btn), 0px 0px 15px var(--color-btn), 0px 0px 20px var(--color-btn), 0px 0px 25px var(--color-btn);
@@ -124,6 +125,7 @@ nav {
   nav {
     bottom: 1rem;
     width: 90%;
+    height: 10vh;
   }
   .navigation {
     width: 90%;
