@@ -1,6 +1,6 @@
 import {useState} from "react";
 import {
-  /*BrowserRouter as Router,*/
+ /* BrowserRouter as Router,*/
   Routes,
   Route
 } from "react-router-dom";
@@ -29,11 +29,11 @@ const App = () =>{
    <Animation/>
    <Nav/>
    <Routes>
-    <Route path="/portfolio" element={<Header/>}/>
-    <Route path="/portfolio/about" element={<About/>}/>
-    <Route path="/portfolio/experience" element={<Experience/>}/>
-    <Route path="/portfolio/contact" element={<Contact showAlert={showAlert}/>}/>
-    <Route path="/portfolio/services" element={<Portfolio/>}/>
+    <Route path="/" element={<Header/>}/>
+    <Route path="/about" element={<About/>}/>
+    <Route path="/experience" element={<Experience/>}/>
+    <Route path="/contact" element={<Contact showAlert={showAlert}/>}/>
+    <Route path="/services" element={<Portfolio/>}/>
    </Routes>
     <Maps/>
     <Footer/>

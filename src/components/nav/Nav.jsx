@@ -20,30 +20,30 @@ const list = [
      icons:<BiBook/>,
      title:"Experience",
      text:"Experience",
-     link:"/portfolio/experience"
+     link:"/experience"
    },{
      id:2,
      icons:<AiOutlineUser/>,
      title:"About",
      text:"About",
-     link:"/portfolio/about"
+     link:"/about"
    },{
      id:1,
      icons:<AiOutlineHome/>,
      title:"Home",
-     link:"/portfolio/"
+     link:"/"
    },{
      id:4,
      icons:<RiServiceLine/>,
      title:"Portfolio",
      text:"Portfolio",
-     link:"/portfolio/services"
+     link:"/services"
    },{
      id:5,
      icons:<BiMessageSquareDetail/>,
      title:"Contact",
      text:"Contact",
-     link:"/portfolio/contact"
+     link:"/contact"
    }
  ]
   return(
