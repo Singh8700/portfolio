@@ -2,7 +2,7 @@ import {useState} from 'react';
 
 import style from './Nav.module.css';
 
-import { useLocation, Link} from "react-router-dom";
+import { Link} from "react-router-dom";
 //import { useLocation } from 'react-router-dom';
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
@@ -10,10 +10,10 @@ import {BiBook} from 'react-icons/bi';
 import {RiServiceLine} from 'react-icons/ri'
 import {BiMessageSquareDetail} from 'react-icons/bi'
 //import list from "./NavList.jsx";
-const Nav=()=>{
-  const location = useLocation();
-  const path = location.pathname;
- const [isActive,setIsActive]=useState(path);
+const Nav=(props)=>{
+  
+ const [isActive,setIsActive]=useState(props.path);
+
 const list = [
    {
      id:3,
@@ -46,6 +46,7 @@ const list = [
      link:"/contact"
    }
  ]
+ 
   return(
     <nav> 
     <ul className={`scales ${style.navigation}`}>
@@ -53,7 +54,7 @@ const list = [
     list.map((ele)=>{
       return(
      
-    <li onClick={()=>setIsActive(ele.link)} className={isActive === ele.link ? style.active : ' '}>
+    <li onClick={()=>setIsActive(ele.link)} className={props.path === ele.link ? style.active : ' '}>
      <Link to={ele.link}>
     <span className={style.icon}>
      {ele.icons} 
