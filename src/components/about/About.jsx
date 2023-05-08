@@ -1,6 +1,5 @@
 
 import style from "./About.module.css";
-//import pic from "../../img/logo.png";
 import Animation from "../../Animation";
 import {list, Qualification} from "./AboutApi"
 import { Link } from "react-router-dom";
@@ -67,7 +66,7 @@ const About=()=>{
          I currently live in Delhi and have completed all my education from Delhi. I started my programming journey from my phone and learned as much as I could from my phone.
          
         </p>
-        <Link to="/portfolio/contact" className={`btn btn-primary ${style.btns}`} relative="path">
+        <Link to="/contact" className={`btn btn-primary ${style.btns}`} relative="path">
         Send Massage
      </Link>
      <br/>
