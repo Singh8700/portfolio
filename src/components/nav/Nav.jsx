@@ -31,7 +31,7 @@ const list = [
      id:1,
      icons:<AiOutlineHome/>,
      title:"Home",
-     link:"/portfolio"
+     link:"/portfolio/"
    },{
      id:4,
      icons:<RiServiceLine/>,
