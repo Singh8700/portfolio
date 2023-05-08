@@ -10,7 +10,7 @@ const contacts =[
     title:"WhatsApp",
     add:"+91 8700750589",
     cl:"transY",
-    link:"https://api.whatsapp.com/send?phone=+918700750589",
+    link:"https://bit.ly/rohit-port",
   }];
   const forms=[{
     id:1,

@@ -118,11 +118,9 @@
   font-size: 1.2rem;
   margin: 1.2rem auto 0;
   padding: 1.2rem 1rem;
-  border-radius: 1.5rem;
-  color: var(--color-light);
+  border-radius: 2rem;
   background: var(--color-bg-variant);
-  text-shadow: 2px 2px 4px var(--color-bg);
-  font-weight: 800;
+  font-weight: bold;
 }
 
 .btns:hover {
