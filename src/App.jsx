@@ -1,6 +1,6 @@
 import {useState} from "react";
 import {
-  BrowserRouter as Router,
+  /*BrowserRouter as Router,*/
   Routes,
   Route
 } from "react-router-dom";
@@ -24,7 +24,7 @@ const App = () =>{
   }
   
   return (
-   <Router>
+   <>
    <Alerts msg={alerts}/>
    <Animation/>
    <Nav/>
@@ -37,7 +37,7 @@ const App = () =>{
    </Routes>
     <Maps/>
     <Footer/>
-    </Router>
+    </>
   );
 }
 

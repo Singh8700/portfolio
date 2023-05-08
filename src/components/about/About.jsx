@@ -67,7 +67,7 @@ const About=()=>{
          I currently live in Delhi and have completed all my education from Delhi. I started my programming journey from my phone and learned as much as I could from my phone.
          
         </p>
-        <Link to="/contact" className={`btn btn-primary ${style.btns}`}>
+        <Link to="/portfolio/contact" className={`btn btn-primary ${style.btns}`} relative="path">
         Send Massage
      </Link>
      <br/>
