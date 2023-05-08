@@ -29,7 +29,7 @@
   text-align: centre;
   font-weight: 900;
  /* margin-bottom: 2rem;*/
- font-size: 1.5rem;
+ font-size: 4.5rem;
   color: var(--color-primary);
   text-shadow: 2px 2px 4px black;
   font-family: Georgia;
@@ -37,7 +37,7 @@
 .content{
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  row-gap: 1.5rem;
+  row-gap: 1.8rem;
   
 }
 .details{
@@ -46,7 +46,7 @@
   justify-content: center;
 }
 .details > div h4{
-  font-size: 2rem;
+  font-size: 4rem;
   text-shadow: 2px 2px 4px black;
   text-align: center;
   color: #ccc;
@@ -54,7 +54,7 @@
   font-weight: 700;
 }
 .small{
-  font-size: 1.2rem;
+  font-size: 2rem;
   text-align: center;
   font-family: Georgia;
   color:#aaa;
@@ -80,7 +80,7 @@
 /*==== small Screen ===*/
 @media screen and (max-width: 900px){
   .container > div h3{
-      font-size: 2rem;
+      font-size: 3rem;
     }
   .content{
     grid-template-columns: 1fr;
@@ -89,10 +89,10 @@
     margin:0 auto;
     text-align: center;
     h4{
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     .small{
-      font-size: 1.3rem;
+      font-size: 1.8rem;
     }
   }
   

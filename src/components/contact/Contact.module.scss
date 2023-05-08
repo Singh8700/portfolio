@@ -28,11 +28,10 @@
     font-size: 3.5rem;
     color: #aaa;
   }
-  h5{
-    font-size: 3.5rem;
-    color:#eee;
-    overflow-x: hidden;
-  }
+}
+.h5{
+  background: red;
+  font-weight: bold;
 }
 .option:hover{
   border: 1px solid var(--color-bg-variant);

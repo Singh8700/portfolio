@@ -51,14 +51,14 @@ section {
 }
 
 .cards .card .title h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--color-primary);
   font-weight: bold;
   word-break: all;
 }
 
 .cards .card .title h5 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--color-light);
 }
 

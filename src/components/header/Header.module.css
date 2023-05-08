@@ -51,7 +51,7 @@ header {
 }
 
 .h5 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   word-break: all;
 }
@@ -152,7 +152,7 @@ h1 {
     margin: 1rem auto 0;
   }
   .h1 {
-    font-size: 3.8rem;
+    font-size: 5rem;
   }
 }
 
@@ -187,6 +187,13 @@ h1 {
     width: 100%;
     margin: 0 auto;
   }
+  .texts h5 {
+    font-size: 2.5rem;
+  }
+  .texts .h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
   .me {
     display: none;
     position: absolute;
@@ -195,9 +202,6 @@ h1 {
     transform: translate(-50%, 0%);
     width: 18rem;
     height: 25rem;
-  }
-  .h5 {
-    font-size: 1.8rem;
   }
 }
 
