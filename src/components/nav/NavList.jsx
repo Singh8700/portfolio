@@ -24,8 +24,8 @@ const list = [
    },{
      id:4,
      icons:<RiServiceLine/>,
-     title:"Portfolio",
-     text:"Portfolio",
+     title:"Projects",
+     text:"Projects",
      link:"/services"
    },{
      id:5,

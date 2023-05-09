@@ -8,7 +8,7 @@ const Portfolio=()=>{
     <Animation/>
     <section id="services" className="transformX">
     <h5 className="scales">Let See</h5>
-     <h2 className="scales">Portfolio</h2>
+     <h2 className="scales">Projects</h2>
       
       <div className={`container scales ${style.containers}`}>
      <div className={style.cards}>
