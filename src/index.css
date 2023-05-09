@@ -8,6 +8,8 @@
   text-decoration:none;
 }
 :root{
+  font-size: 90.5%;
+  
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
   --color-primary: #4db5ff;
@@ -73,7 +75,8 @@ body {
   }
 }
 h1,h2,h3,h4,h5{
-  font-weight: 500;
+  font-weight: bold;
+  font-family: Georgia;
 }
 h1{
   font-size: 2.5rem;
@@ -158,7 +161,11 @@ img{
   .container{
     width: var(--container-width-sm);
   }
+  section > h5{
+    font-size: 1rem;
+  }
   section > h2{
+    font-size: 2rem;
     margin-bottom:2rem;
   }
 }
