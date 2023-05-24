@@ -30,8 +30,8 @@ const Contact=(props)=>{
   return(
     <section id="contact" className="transformX">
       <Animation/>
-      <h5 className="scales">Get In Touch</h5>
-      <h2 className="scales">Contact Me</h2>
+      <h5 className={`scales h5`}>Get In Touch</h5>
+      <h2 className={`scales h2`}>Contact Me</h2>
       
       <div className={`scales ${style.container}`}>
         <div className={style.options}>

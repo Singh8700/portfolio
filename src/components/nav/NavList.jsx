@@ -11,8 +11,8 @@ const list = [
      text:"Experience",
      link:"/experience"
    },{
-     id:2,
-     icons:<AiOutlineUser/>,
+     id:4,
+     icons:<RiServiceLine/>,
      title:"About",
      text:"About",
      link:"/about"
@@ -20,10 +20,10 @@ const list = [
      id:1,
      icons:<AiOutlineHome/>,
      title:"Home",
-     link:"/portfolio/"
+     link:"/"
    },{
-     id:4,
-     icons:<RiServiceLine/>,
+     id:2,
+     icons:<AiOutlineUser/>,
      title:"Projects",
      text:"Projects",
      link:"/services"

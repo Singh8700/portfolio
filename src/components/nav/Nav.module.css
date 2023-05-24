@@ -1,6 +1,6 @@
 nav {
   background: rgba(0, 0, 0, 0.6);
-  width: max-content;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,9 +19,10 @@ nav {
 }
 
 .navigation {
+  padding: 2rem 0;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
   border-radius: 2rem;
-  width: 80%;
+  width: 85%;
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -47,9 +48,10 @@ nav {
 
 .navigation li a .icon {
   position: absolute;
-  font-size: 1.7em;
-  width: 2.5rem;
-  height: 2.5rem;
+  font-size: 2.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,8 +62,8 @@ nav {
 
 .navigation li a .title {
   position: absolute;
-  font-size: 0.75rem;
-  transform: translateY(1.2rem);
+  font-size: 1.5rem;
+  transform: translateY(2rem);
   padding: 0.2px 0.5rem;
   background: #fff;
   opacity: 0;
@@ -75,7 +77,7 @@ nav {
 .navigation li a .icon:before {
   content: ' ';
   position: absolute;
-  inset: 0.3rem;
+  inset: 0.4rem;
   background: #2f363e;
   border-radius: 50%;
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25), inset 2px 2px 3px rgba(255, 255, 255, 0.25), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
@@ -91,7 +93,7 @@ nav {
 .navigation li.active .icon {
   background: var(--color-btn);
   color: #fff;
-  transform: translateY(-2.5rem);
+  transform: translateY(-4.5rem);
   box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25), inset 2px 2px 3px rgba(255, 255, 255, 0.25), inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -101,15 +103,16 @@ nav {
 
 .navigation li.active .title {
   opacity: 1;
-  transform: translateY(-0.1rem);
+  transform: translateY(-0.5rem);
 }
 
 .navigation li.active:before {
   content: ' ';
   position: absolute;
   top: 2.5rem;
+  top: 100%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -20%);
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
@@ -120,6 +123,11 @@ nav {
 /*==== small Screen ===*/
 @media screen and (max-width: 900px) {
   nav {
+    width: 90%;
+    height: 8.5vh;
     bottom: 1rem;
+  }
+  .navigation {
+    width: 100%;
   }
 }

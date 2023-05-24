@@ -7,8 +7,8 @@ const Portfolio=()=>{
     <>
     <Animation/>
     <section id="services" className="transformX">
-    <h5 className="scales">Let See</h5>
-     <h2 className="scales">Projects</h2>
+    <h5 className={`scales h5`}>Let See</h5>
+     <h2 className={`scales h2`}>Projects</h2>
       
       <div className={`container scales ${style.containers}`}>
      <div className={style.cards}>
@@ -18,15 +18,21 @@ const Portfolio=()=>{
           return(
          <div key={element.id} className={`${style.cl} ${element.cl}`}>
             <article className={style.card}>
+            {element.news?
+            <span className={style.news}>
+            <img src={element.tit}/>
+            </span>:<span></span>
+            }
             <div className={style.imgs}>
           
               <img src={element.imgs} alt={element.title} className={element.cll}/>
             </div>
             <div className={style.title}>
-              <h3>{element.title}</h3>
-              <h5>{element.small}</h5>
+              <h2>{element.title}</h2>
+              <h4>{element.small}</h4>
               <a href={element.link} className="btn btn-primary">Live Demo</a>
             </div>
+           
           </article>
         </div>
           )

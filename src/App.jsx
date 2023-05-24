@@ -4,6 +4,9 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Theme from "./templates/Themes"
+import {ThemeProvider} from "styled-components"
+import {GlobalStyle} from "./templates/GlobalStyle"
 import Header from "./components/header/Header";
 import Maps from "./components/maps/Maps"
 import Nav from "./components/nav/Nav"
@@ -14,6 +17,8 @@ import Contact from "./components/contact/Contact";
 import Animation from "./Animation";
 import Alerts from "./components/alerts/Alerts";
 import Footer from "./components/footer/Footer";
+import Error from "./components/error/Error"
+import HeroSection from "./components/heroSection/HeroSection"
 const App = () =>{
   const location = useLocation();
   const path = location.pathname;
@@ -27,6 +32,8 @@ const App = () =>{
 
   return (
    <>
+   <ThemeProvider theme={Theme}>
+   <GlobalStyle/>
    <Alerts msg={alerts}/>
    <Animation/>
    <Routes>
@@ -35,10 +42,12 @@ const App = () =>{
     <Route path="/experience" element={<Experience/>}/>
     <Route path="/contact" element={<Contact showAlert={showAlert}/>}/>
     <Route path="/services" element={<Portfolio/>}/>
+    <Route path="*" element={<Error/>}/>
    </Routes>
     <Nav path={path}/>
     <Maps/>
     <Footer/>
+    </ThemeProvider>
     </>
   );
 }

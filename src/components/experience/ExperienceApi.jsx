@@ -29,6 +29,12 @@ const frontEnd = [
       icon:" ",
       cl:"transY",
       exp:"only Learnt"
+    },{
+      id:6,
+      item:"React Js",
+      icon:" ",
+      cl:"transY",
+      exp:"Learning Way"
     }
     ]
   const Other=[

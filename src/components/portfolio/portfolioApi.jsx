@@ -1,5 +1,6 @@
 import portpic01 from "../../Assets/port01.jpg";
 import port00 from "../../Assets/port00.jpg";
+import redux from "../../Assets/redux.jpg";
 import portpic03 from "../../Assets/port03.jpg";
 import portpic04 from "../../Assets/port04.png";
 import portpic05 from "../../Assets/port05.png";
@@ -8,11 +9,25 @@ import poster02 from "../../img/Poster02.jpg";
 import logo01 from "../../img/Logo01.jpg";
 import logo02 from "../../img/Logo02.jpg";
 import logo03 from "../../img/Logo03.jpg";
+import New from "../../assets/new.png";
 
 const Pic=[
   {
+    id:4,
+    imgs:redux,
+    tit:New,
+    news:true,
+    cl:"transX",
+    cll:"transY",
+    title:"Redux Tools Simple used",
+    small:"create a simple example for reduxjs/tool in ReactJs",
+    link:'https://singh8700.github.io/redux/'
+  },
+  {
     key:1,
     imgs:port00,
+    tit:New,
+    news:false,
     cl:"transX",
     cll:"transY",
     title:"Notes Management System",
@@ -22,6 +37,8 @@ const Pic=[
     {
       key:2,
      imgs:portpic04,
+     tit:New,
+    news:false,
      cl:"transY",
      cll:"transX",
       title:"Education Institute Demo",
@@ -32,6 +49,8 @@ const Pic=[
      imgs:portpic05,
       title:"DOB",
       cl:"transX",
+      tit:New,
+       news:false,
       cll:"transY",
       small:"Lucky Number Finder Web",
       link:'https://singh8700.github.io/DOB/'

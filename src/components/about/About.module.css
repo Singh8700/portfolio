@@ -14,53 +14,50 @@
 
 .aboutContent {
   /*  background: blue;*/
-  width: 450px;
+  width: 850px;
   overflow-x: hidden;
   margin: 0 auto;
 }
 
-.aboutMe {
-  width: 300px;
-  height: 400px;
+/*
+.aboutMe{
+  width: 250px;
+  height: 300px;
   border-radius: 2rem;
-  background: linear-gradient(45deg, transparent, var(--color-primary));
+ 
+  background: linear-gradient(45deg, transparent,var(--color-primary));
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: red;*/
-  box-shadow: 4px 4px 10px #000;
-  /*
+ /* background: red;
+  box-shadow: 4px 4px 10px #000;/*
               inset 4px 4px 10px var(--color-primary),
               4px 4px 5px var(--color-primary),
               inset -4px -4px 10px var(--color-primary),
               inset 4px 4px 70px black;
-  /* margin: 2rem auto;*/
+  /* margin: 2rem auto;
 }
-
-.aboutMeImg {
-  width: 100%;
+.aboutMeImg{
+  width:100%;
   height: 100%;
   border-radius: 2rem;
   transform-origin: right top;
   transform: rotate(10deg);
-  background: linear-gradient(130deg, var(--color-primary), transparent, rgba(0, 0, 0, 0.9)), url("../../img/bg.png") no-repeat;
-  /* transform-origin: left;*/
-  background-size: 120% 110%;
-  box-shadow: 4px 4px 10px #000;
+  background: linear-gradient(130deg,var(--color-primary), transparent,rgba(0,0,0,0.9)),url('../../img/bg.png') no-repeat;
+ /* transform-origin: left;
+ background-size: 120% 110%;
+ box-shadow: 4px 4px 10px #000;
   transition: var(--transition-all);
-  margin: 0 0 0 1.8rem;
+  margin:0 0 0 1.8rem;
+  img{
+    width:100%;
+  }
 }
-
-.aboutMeImg img {
-  width: 100%;
-}
-
-.aboutMeImg:hover {
+.aboutMeImg:hover{
   transform-origin: right top;
   transform: rotate(0deg);
   margin: 0;
-}
-
+}*/
 .aboutCards {
   width: 100%;
   display: flex;
@@ -73,8 +70,16 @@
   overflow-x: hidden;
 }
 
-.aboutCard {
-  width: 380px;
+.card {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+.card .aboutCard {
+  width: 280px;
   margin: 0.8rem auto;
   background: var(--color-bg-variant);
   border: 1px solid transparent;
@@ -85,7 +90,7 @@
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 15px rgba(255, 255, 255, 0.15), inset -3px -3px 20px rgba(0, 0, 0, 0.5);
 }
 
-.aboutCard h5 {
+.card .aboutCard h5 {
   font-size: 2.5rem;
   color: #ccc;
   word-break: all;
@@ -112,38 +117,23 @@
   color: var(--color-light);
 }
 
-.btns {
-  font-size: 1.2rem;
-  margin: 1.2rem auto 0;
-  padding: 1.2rem 1rem;
-  border-radius: 2rem;
-  background: var(--color-bg-variant);
-  font-weight: bold;
-}
-
-.btns:hover {
-  box-shadow: 2px 2px 10px var(--color-bg-variant);
-}
-
-/*
-.aboutContent{
-  width:100%;
-}*/
 .pera {
-  /* margin: 0.75rem 1.2rem;*/
+  max-width: 80%;
   background: va(--color-bg-variant);
   border: 1px solid var(--color-light);
   margin: 1.2rem auto;
   color: #ccc;
-  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   overflow-x: hidden;
   align-items: center;
 }
 
 .pera p {
   width: 100%;
-  margin: 2rem auto 1.2rem;
-  padding: 2rem 4rem;
+  margin: 2rem 0 1.2rem;
+  padding: 2rem 1rem;
   text-align: left;
   word-break: all;
 }
@@ -165,9 +155,9 @@
 
 /*====medium Screen ===*/
 @media screen and (max-width: 1024px) {
-  .aboutMe {
-    margin-top: -5.5rem;
-  }
+  /*.aboutMe{
+   margin-top: -5.5rem;
+  }*/
   .aboutCards {
     grid-template-columns: 1fr 1fr;
     gap: 1.6rem;
@@ -176,30 +166,30 @@
     /* background: red;*/
     margin-top: 2rem;
   }
-  .aboutMe {
-    margin: 5rem auto;
-  }
 }
 
 /*==== small Screen ===*/
 @media screen and (max-width: 900px) {
   /*.aboutUs{
     margin-top: -3.5rem;
-  }*/
-  .aboutMe {
-    width: 350px;
-    height: 400px;
+  }
+  .aboutMe{
+    width:350px;
+    height: 300px;
     margin: 0 auto 2.5rem;
     margin: 4rem auto;
-  }
-  .aboutMe .aboutMeImg {
-    background: linear-gradient(130deg, var(--color-primary), transparent, rgba(0, 0, 0, 0.9)), url("../../img/logo.png");
-    background-position: left;
+    .aboutMeImg{
+    background: linear-gradient(130deg,var(--color-primary), transparent,rgba(0,0,0,0.9)),url('../../img/logo.png');
+    background-position: top left;
     background-attachment: fixed;
-  }
+    }
+  }*/
   .aboutCards {
     grid-template-columns: 1fr;
     gap: 1.6rem;
+  }
+  .aboutCard {
+    width: 90%;
   }
   .aboutCard h5 {
     font-size: 2rem;

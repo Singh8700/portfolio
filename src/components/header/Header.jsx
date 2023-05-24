@@ -1,27 +1,29 @@
-import React from "react";
-import style from "./Header.module.css";
+import {useState, useEffect} from "react"
+//import style from "./Header.module.css";
 import CV from "./CV";
-import pic from "../../img/logo.png";
+import pic01 from "../../img/bg.png";
+import pic00 from "../../img/logo.png";
+import HeroSection from "../heroSection/HeroSection"
 const Header=()=>{
+ const [imgs,setImgs] = useState();
+ useEffect(()=>{
+    if(window.innerWidth <= "768"){
+      return setImgs(pic00)
+    }else{
+      return setImgs(pic01)
+    }
+ },[])
+  const datas = {
+    img:imgs,
+    title:"Rohit",
+    textHighlight:`Hi, I am Rohit.
+   I am currently doing my internship as a tutor for the DCA course. Before this,I have also worked as a computer operator in Covid-19 at the Vaccination Center. `,
+   btn:<CV />
+  }
   return(
-    <header>
-      <div className={`cotainer scales ${style.header}`}>
-     <div className={style.leftSide}>
-      <div className={style.texts}>
-      <h5 style={{fontSize:'1.2rem',color:'#ccc',fontWeight:"bold"}}>Hello I m</h5>
-      <h1 data-text="Rohit.." className={style.h1}>Rohit..</h1>
-      <h5 className={`text-light ${style.h5}`}>DCA tutor & Web Designer</h5>
-      
-      <CV/>
-      </div>
-      </div>
-      <div className={style.rightSide}>
-      <div className={style.me}>
-        <img src={pic} alt={pic}/>
-      </div>
-      </div>
-    </div>
-    </header>
+   <>
+   <HeroSection myData={datas}/>
+  </>
     )
 }
 export default Header

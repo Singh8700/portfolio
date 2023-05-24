@@ -7,8 +7,8 @@ const Experience=()=>{
     <>
     <Animation/>
     <section id="experience" className="transformX">
-      <h5 className="scales">What Skills I have </h5>
-      <h2 className="scales">Skills</h2>
+      <h5 className={`scales h5`}>What Skills I have </h5>
+      <h2 className={`scales h2`}>Skills</h2>
     
       <div className={`container scales ${style.container}`}>
         <div className={style.frontEnd}>

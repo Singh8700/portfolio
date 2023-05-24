@@ -1,22 +1,216 @@
+import React from "react";
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+import { Button } from "../../templates/Button";
+import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
-import style from "./Footer.module.css";
-import { Link } from "react-router-dom";
-//import list from "./FooterApi.js"
-const Footer=()=>{
-  
-  return(
+const Footer = () => {
+  return (
     <>
-    <div className={`scales`}>
-    <footer className={style.footers}>
-    <section id="footer" >
-    <div>
-     <Link to="/" className={style.logo}>Rohit</Link>
-     <h5 className={style.copyright}>@Rohit8700 © copyright 2023 </h5>
-    </div>
-    </section>
-    </footer>
-    </div>
-   </>
-    )
+      <Wrapper>
+        <section className="contact-short">
+          <div className="grid grid-two-column">
+            <div>
+              <h3>Ready to get started?</h3>
+              <h3>Talk to us today</h3>
+            </div>
+
+            <div>
+              <Button className="btn hireme-btn">
+                <NavLink to="/contact"> Get Started </NavLink>
+              </Button>
+            </div>
+          </div>
+        </section>
+        {/* footer section */}
+
+        <footer>
+          <div className="container grid grid-three-column">
+            <div className="footer-about">
+              <h1>Rohit</h1>
+              <p>DCA Tutor, Web Designer (like :- HTML, CSS JS & other library's or frameworks), Tally also</p>
+            </div>
+            <div className="footer-subscribe">
+              <h3>Subscribe to get important updates</h3>
+              <form action="https://formspree.io/f/mrgvdbzp" method="POST">
+                <input type="email" name="email" placeholder="YOUR E-MAIL" required/>
+
+                <input type="submit" value="subscribe" className="btn" />
+              </form>
+            </div>
+      {/*<div className="footer-social">
+              <h3>Follow Us</h3>
+             <div className="footer-social--icons">
+                <div>
+                  <FaDiscord className="icons" />
+                </div>
+                <div>
+                  <FaInstagram className="icons" />
+                </div>
+                <div>
+                  <a
+                    href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
+                    target="_blank">
+                    <FaYoutube className="icons" />
+                  </a>
+                </div>
+              </div>
+            </div>*/}
+            <div className="footer-contact">
+            <div>
+              <h3>Call Us</h3>
+              <a href="tel:918700750589"><h3>+91 8700750589</h3></a>
+              </div>
+              <div>
+               <h3>E-Mail Us</h3>
+               <a href="mailto:rohitfolio8700@gmail.com"><h3>rohitfolio8700@gmail.com</h3></a>
+              </div>
+            </div>
+          </div>
+
+          <div className="footer-bottom--section">
+            <hr />
+            <div className="container grid grid-two-column">
+              <h3>
+                @{new Date().getFullYear()} Rohit@8700. All Rights Reserved
+              </h3>
+              <div>
+                <p>PRIVACY POLICY</p>
+                <p>TERMS & CONDITIONS</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </Wrapper>
+    </>
+  );
+};
+
+const Wrapper = styled.section`
+  background-color: ${({ theme }) => theme.colors.footer_bg};
+  position: sticky;
+  bottom: 0%;
+  padding:0rem 5rem;
+  .contact-short {
+    max-width: 80vw;
+    margin:5rem auto 0;
+    padding: 2rem 4rem;
+    color:#aaa;
+    background-color: ${({ theme }) => theme.colors.bg};
+    border-radius: 1rem;
+    box-shadow: ${({ theme }) => theme.colors.shadowSupport};
+    transform: translateY(-50%);
+    .grid div:last-child {
+      justify-self: center;
+      align-self: center;
+    }
+  }
+
+  footer {
+    padding: 10rem 4rem 15rem 0;
+    h1{
+      font-size:4rem;
+      color: ${({ theme }) => theme.colors.hr};
+      margin-bottom: 1rem;
+      word-break:all;
+    }
+    h3{
+      color: ${({ theme }) => theme.colors.hr};
+      margin-bottom: 1rem;
+      word-break:all;
+    }
+    p {
+      color: ${({ theme }) => theme.colors.white};
+    }
+    .footer-social--icons {
+      display: flex;
+      gap: 2rem;
+
+      div {
+        padding: 1rem;
+        border-radius: 50%;
+        border: 2px solid ${({ theme }) => theme.colors.white};
+
+        .icons {
+          color: ${({ theme }) => theme.colors.white};
+          font-size: 2.4rem;
+          position: relative;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+ .btn{
+  background-color:${({theme})=>theme.colors.btns};
+  border-radius:1.5rem;
+ }
+  .footer-bottom--section {
+    padding-top: 9rem;
+
+    hr {
+      margin-bottom: 2rem;
+      color: ${({ theme }) => theme.colors.hr};
+      height: 0.1px;
+    }
+  }
+.footer-subscribe form input{
+  width:400px; 
+  margin: 2.5rem;
 }
-export default Footer
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+  margin-top:20rem;
+  padding:2rem 0 0;
+    .footer-bottom--section{
+      div{
+        text-align:left;
+      }
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+  margin-top:3rem;
+    .contact-short {
+      max-width: 80vw;
+      height:auto;
+      margin: 4.8rem auto;
+      transform: translateY(0%);
+      text-align: center;
+      .grid div:last-child {
+        justify-self: center;
+      }
+    }
+
+    footer {
+    
+      margin-bottom: 2rem;
+      .footer-about{
+        width:80%;
+      }
+      
+      .footer-subscribe{
+        width:100%;
+        input{
+          width:350px;
+        }
+      }
+    }
+    .footer-subscribe form input{
+    margin: 2rem -1rem;
+    }
+    .footer-subscribe input{
+    width:100%;
+      display:flex;
+      flex-direction:column;
+      border-radius:1.5rem;
+      
+    }
+    .footer-bottom--section {
+     padding:4.8rem 0 4rem 0;
+      div{
+        text-align:left;
+      }
+    }
+  }
+ 
+`;
+
+export default Footer;
