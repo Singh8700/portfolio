@@ -1,6 +1,8 @@
 import Animation from "../../Animation"
+import { NavLink} from "react-router-dom";
 import style from"./Portfolio.module.css";
 import { Pic,Posters,Logos, Design } from "./portfolioApi.jsx"
+
 const Portfolio=()=>{
   
   return(
@@ -24,13 +26,14 @@ const Portfolio=()=>{
             </span>:<span></span>
             }
             <div className={style.imgs}>
-          
-              <img src={element.imgs} alt={element.title} className={element.cll}/>
+              <img src={element.imgs} alt={element.title} className={element.cll}/>      
             </div>
             <div className={style.title}>
               <h2>{element.title}</h2>
               <h4>{element.small}</h4>
-              <a href={element.link} className="btn btn-primary">Live Demo</a>
+             <a href={element.link} className="btn btn-primary">
+              Live Preview
+              </a>
             </div>
            
           </article>

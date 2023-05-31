@@ -105,10 +105,11 @@ h1{
 }
 @keyframes texs{
   to{
-    width:0%;
+    width:50%;
   }
   from{
-    width:80%;
+    width:50%;
+    color:red;
   }
 }
 

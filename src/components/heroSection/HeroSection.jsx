@@ -152,10 +152,10 @@ const HeroSection = ({myData})=>{
         <div className="flex grid-four-column">
           <div className="hero-section-data">
             <p className="intro-data">Hello I'm</p>
-            <h1 data-text={`${title}.......`} className="text-animate">{title}</h1>
+            <h1 data-text={`${title}`} className="text-animate">{title}</h1>
             <p className="title-highlight">
              {textHighlight}
-              <br/>
+              <br />
             </p>
               {btn}
           </div>
