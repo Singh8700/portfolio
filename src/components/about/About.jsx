@@ -18,9 +18,10 @@ const About=()=>{
  },[])
   const datas = {
     img:imgs,
-    title:"Rohit_Singh",
+    title:"Rohit_Singh......",
     textHighlight:`Hi, I am Rohit.I am currently doing my internship as a tutor for the DCA course. Before this,I have also worked as a computer operator in Covid-19 at the Vaccination Center. `,
     btn:"",
+    width:"35%"
   }
 
   return(

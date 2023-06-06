@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const HeroSection = ({myData})=>{
-  const { title,img, textHighlight,btn} = myData;
+  const { title,img, textHighlight,btn,width} = myData;
   
   const Wrapper = styled.section`
   padding: 5rem 2rem;
@@ -31,7 +31,6 @@ const HeroSection = ({myData})=>{
       color:#aaa;
       font-size:2.5rem;
       
-      
     }
     h1 {
       text-transform: capitalize;
@@ -41,7 +40,9 @@ const HeroSection = ({myData})=>{
       word-break:all;
     }
   }
-  
+  .text-animate{
+    width:${width};
+  }
   .hero-section-image {
     max-width:500px;
     height: auto;
@@ -94,7 +95,10 @@ const HeroSection = ({myData})=>{
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    
+    .text-animate{
+    width:65%;
+    text-align:center;
+  }
   img {
     height:30rem;
   }
