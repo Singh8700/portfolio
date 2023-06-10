@@ -4,7 +4,8 @@ const HeroSection = ({myData})=>{
   const { title,img, textHighlight,btn,width} = myData;
   
   const Wrapper = styled.section`
-  padding: 5rem 2rem;
+  padding: 5rem 8rem;
+  max-width:100%;
   img {
     min-width: 10rem;
     height: 20rem;
@@ -12,9 +13,10 @@ const HeroSection = ({myData})=>{
   }
   .flex{
   width:100%;
-   display:flex;
+  display:flex;
   justify-content:space-around;
   align-items:center;
+  gap:10px;
   flex-wrap:wrap-reverse;
   }
   .hero-section-data {
@@ -84,7 +86,7 @@ const HeroSection = ({myData})=>{
       border-radius:2rem;
       position: absolute;
       left: 35%;
-      top: -3rem;
+      top: -6rem;
       z-index: -1;
     }
   }
@@ -93,8 +95,21 @@ const HeroSection = ({myData})=>{
     height: auto;
     
   }
-
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    padding:5rem 2rem;
+    align-items:center;
+    gap:5rem;
+    figure{
+    margin: 2rem auto;
+    img{
+      width:300px;
+      height:35rem;
+      position:relative;
+    }
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+  padding:5rem 2rem;
     .text-animate{
     width:65%;
     text-align:center;
@@ -105,16 +120,7 @@ const HeroSection = ({myData})=>{
     section{
       padding: 5rem 0rem
     }
-    .grid {
-      padding: 12rem 0rem;
-      gap: 10rem;
-      margin:-2rem auto;
-      width:90%;
-      display:flex;
-      justify-contents: center;
-      align-items:center;
-      flex-wrap: wrap-reverse;
-    }
+
     .hero-section-data,.hero-section-image{
     min-width:100%;
     display:flex;
@@ -132,8 +138,10 @@ const HeroSection = ({myData})=>{
     }
     }
     figure{
+    padding:2rem auto;
+    margin:1rem auto 0 2.5rem;
     img{
-      width:300px;
+      width:250px;
       height:30rem;
       position:relative;
     }
@@ -153,7 +161,7 @@ const HeroSection = ({myData})=>{
   return (
     <Wrapper>
      <div className="contianer">
-        <div className="flex grid-four-column">
+        <div className="flex">
           <div className="hero-section-data">
             <p className="intro-data">Hello I'm</p>
             <h1 data-text={`${title}`} className="text-animate">{title}</h1>

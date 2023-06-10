@@ -126,8 +126,13 @@ nav {
     width: 90%;
     height: 8.5vh;
     bottom: 1rem;
+    padding: 3rem 2rem;
   }
   .navigation {
     width: 100%;
   }
+  .navigation li a .title {
+    font-size: 1rem;
+  }
+  /*end */
 }

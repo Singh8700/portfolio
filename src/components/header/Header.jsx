@@ -19,7 +19,7 @@ const Header=()=>{
     textHighlight:`Hi, I am Rohit.
    I am currently doing my internship as a tutor for the DCA course. Before this,I have also worked as a computer operator in Covid-19 at the Vaccination Center. `,
    btn:<CV />,
-   width:"10%"
+   width:"20%"
   }
   return(
    <>

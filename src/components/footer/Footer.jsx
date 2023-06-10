@@ -145,7 +145,7 @@ const Wrapper = styled.section`
   border-radius:1.5rem;
  }
   .footer-bottom--section {
-    padding-top: 9rem;
+    padding-top: 8rem;
 
     hr {
       margin-bottom: 2rem;
@@ -180,7 +180,6 @@ const Wrapper = styled.section`
     }
 
     footer {
-    
       margin-bottom: 2rem;
       .footer-about{
         width:80%;
@@ -188,23 +187,21 @@ const Wrapper = styled.section`
       
       .footer-subscribe{
         width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:left;
+        margin:2rem auto;
         input{
-          width:350px;
+          width:100%;
         }
       }
     }
     .footer-subscribe form input{
-    margin: 2rem -1rem;
-    }
-    .footer-subscribe input{
     width:100%;
-      display:flex;
-      flex-direction:column;
-      border-radius:1.5rem;
-      
+    margin: 2rem auto;
     }
-    .footer-bottom--section {
-     padding:4.8rem 0 4rem 0;
+  .footer-bottom--section {
+    padding-top: 4rem;
       div{
         text-align:left;
       }
