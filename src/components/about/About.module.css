@@ -59,7 +59,6 @@
   margin: 0;
 }*/
 .aboutCards {
-  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -72,6 +71,7 @@
 
 .card {
   width: 100%;
+  margin: 2rem auto;
   display: flex;
   justify-content: space-around;
   align-self: center;
@@ -79,7 +79,8 @@
 }
 
 .card .aboutCard {
-  width: 280px;
+  width: 100%;
+  padding: 2px 10px;
   margin: 0.8rem auto;
   background: var(--color-bg-variant);
   border: 1px solid transparent;

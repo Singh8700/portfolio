@@ -43,8 +43,10 @@ const About=()=>{
       <div className={style.aboutContent}>
        <div className={style.aboutCards}>
          <h2 className="tit"> Experience </h2>
+
     <div className={`${style.card}`}>
-          {list.map((element)=>{
+      <div className="cols">
+        {list.map((element)=>{
             return(
         <div key={element.id} className={element.cl}>
           <article className={style.aboutCard}>
@@ -56,11 +58,12 @@ const About=()=>{
           </article>
         </div>
             )
-          })
-          }
+          })}
       </div>
+  </div>
       <h2 className="tit">Qualification</h2>
       <div className={`${style.card}`}>
+        <div className="cols">
           {Qualification.map((element)=>{
             return(
         <div key={element.id} className={element.cl}>
@@ -73,8 +76,8 @@ const About=()=>{
           </article>
         </div>
             )
-          })
-          }
+          })}
+        </div>
        </div>
         </div>
       </div>

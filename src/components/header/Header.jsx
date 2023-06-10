@@ -15,11 +15,11 @@ const Header=()=>{
  },[])
   const datas = {
     img:imgs,
-    title:"Rohit................",
+    title:"Rohit........................",
     textHighlight:`Hi, I am Rohit.
    I am currently doing my internship as a tutor for the DCA course. Before this,I have also worked as a computer operator in Covid-19 at the Vaccination Center. `,
    btn:<CV />,
-   width:"20%"
+   width:"10%"
   }
   return(
    <>

@@ -39,7 +39,13 @@ body::-webkit-scrollbar-thumb {
     border-radius: 9px;
     background-clip: content-box;
 }
-
+.cols{
+width:100%;
+columns: 2;
+column-gap:25px;
+break-inside: avoid;
+margin:1rem auto;
+}
 h1,
 h2,
 h3,
@@ -88,30 +94,6 @@ ${"" /* resuable code section  */}
 .container {
   max-width: 120rem;
   margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-  gap: 5rem;
-  
-}
-
-.grid-two-column {
-  grid-template-columns: repeat(2, 1fr);
-align-items:center;
-text-align:center;
-}
-
-.grid-three-column {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid-four-column{
-   grid-template-columns: 1fr 1.2fr .5fr .8fr ;
-}
-
-.grid-five-column{
-  grid-template-columns: repeat(5, 1fr);
 }
 
   .common-heading {
@@ -167,27 +149,43 @@ input, textarea{
   .h2{
     font-size: 2rem;
   }
+  .cols > *{
+    align-items:center;
+    break-inside: avoid;
+    max-width:100%;
+  }
 @media (max-width: ${({ theme }) => theme.media.tab}) {
     .container {
     max-width: 130rem;
     padding: 0 3.2rem;
   }
-  .grid{
-    grid-template-columns: 1fr;
+.cols{
+    width:calc(100% - 60px);
+    columns:3;
   }
+  .cols .cols-title{
+    margin:0rem auto;
+    font-size:2.5rem;
+  }
+
   }
 
    @media (max-width: ${({ theme }) => theme.media.mobile}) {
        html {
       font-size: 50%;
     }
-.grid{
-  gap: 3.2rem;
-  grid-template-columns: 1fr;
-}
-      .grid-two-column , .grid-three-column, .grid-four-column{
-          grid-template-columns: 1fr;
-        }
-    }
+   .cols{
+    width:calc(100% - 40px);
+    margin:0.5rem auto;
+    columns:2;
+    
+  }
 
+    }
+    @media (max-width: ${({ theme }) => theme.media.small}) {
+    .cols{
+    width:calc(100% - 30px);
+    columns:1;
+  }
+    }
 `;

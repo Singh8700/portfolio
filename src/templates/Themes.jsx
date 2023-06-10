@@ -17,7 +17,8 @@ const Theme = {
   },
   media:{
     mobile:"768px",
-    tab:"998px"
+    tab:"998px",
+    small:"680px"
   }
 
 }

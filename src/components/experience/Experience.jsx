@@ -14,6 +14,7 @@ const Experience=()=>{
         <div className={style.frontEnd}>
           <h3>Frontend Development</h3>
           <div className={style.content}>
+          <div className="cols">
            {frontEnd.map((element)=>{
              return (
           <div key={element.id} className={element.cl}>
@@ -30,15 +31,16 @@ const Experience=()=>{
             </article>
           </div>
             )
-           })
-           }
+           })}
+           </div>
           </div>
         </div>
         {/* send Experience column*/}
         <div className={style.backEnd}>
            <h3>Other Facilities</h3>
           <div className={style.content}>
-           {Other.map((element)=>{
+         <div className="cols">
+        {Other.map((element)=>{
              return (
           <div key={element.id} className={element.cl}>
             <article className={style.details} key={element.id}>
@@ -54,8 +56,8 @@ const Experience=()=>{
             </article>
          </div>
             )
-           })
-           }
+           })}
+          </div>
           </div>
         </div>
       </div>

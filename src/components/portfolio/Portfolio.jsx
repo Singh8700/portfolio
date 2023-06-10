@@ -13,8 +13,10 @@ const Portfolio=()=>{
      <h2 className={`scales h2`}>Projects</h2>
       
       <div className={`container scales ${style.containers}`}>
-     <div className={style.cards}>
+     <div className={`${style.cards}`}>
+
       <h2 className="tit"> Live Projects </h2>
+       <div className="cols">
       {
         Pic.map((element)=>{
           return(
@@ -28,8 +30,8 @@ const Portfolio=()=>{
             <div className={style.imgs}>
               <img src={element.imgs} alt={element.title} className={element.cll}/>      
             </div>
-            <div className={style.title}>
-              <h2>{element.title}</h2>
+            <div className={`${style.title}`}>
+              <h2 className="cols-title">{element.title}</h2>
               <h4>{element.small}</h4>
              <a href={element.link} className="btn btn-primary">
               Live Preview
@@ -37,11 +39,14 @@ const Portfolio=()=>{
             </div>
            
           </article>
+         
         </div>
           )
         })
       }
+      </div>
       <h2 className="tit"> Poster Demos </h2>
+      <div className="cols">
       {
         Posters.map((element)=>{
           return(
@@ -60,7 +65,9 @@ const Portfolio=()=>{
           )
         })
       }
+      </div>
       <h2 className="tit"> Logos Demo </h2>
+     <div className="cols">
       {
         Logos.map((element)=>{
           return(
@@ -79,7 +86,9 @@ const Portfolio=()=>{
           )
         })
       }
+     </div>
       <h2 className="tit"> Web Design Demo </h2>
+     <div className="cols">
        {
         Design.map((element)=>{
           return(
@@ -98,6 +107,7 @@ const Portfolio=()=>{
           )
         })
       }
+     </div>
         </div>
       </div>
     </section>

@@ -142,7 +142,7 @@ img{
 }
 .text-animate{
   position:relative; 
-  text-align: center;
+  text-align: left;
   color: transparent; 
   -webkit-text-stroke: 0.3vw transparent;
   text-transform:uppercase;
@@ -157,6 +157,8 @@ img{
   height:100%;
   color: #fff;
   -webkit-text-stroke: 0vw var(--color-bg); 
+  text-align: right;
+  
   border-right:1px solid var(--color-light);
   overflow:hidden;
   animation:texs 3s alternate infinite;
@@ -166,7 +168,7 @@ img{
     width:0%;
   }
   100%{
-    width:100%;
+    width:80%;
   }
 }
 /*====medium Screen ===*/
@@ -177,6 +179,17 @@ img{
 }
 /*==== small Screen ===*/
 @media screen and (max-width: 600px){
+.text-animate{
+  margin: 0.5rem auto;
+}
+.text-animate::before {
+  text-align: center;
+  left:50%;
+  top:0%;
+  transform: translateX(-50%);
+  font-size: 3rem;
+  height: 65%;
+}
 @keyframes texs{
   to{
     width:0%;
