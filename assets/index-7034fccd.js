@@ -93,7 +93,7 @@ Error generating stack: `+i.message+`
 
 html {
 font-size:62.5%;
-  /* scroll-behavior: smooth; */
+scroll-behavior: smooth;
   /* 1rem = 10px */
   overflow-x: hidden;
   
@@ -281,7 +281,8 @@ input, textarea{
   flex-direction:column;
   }
   `;return A(e,{children:[p("a",{href:ag,download:!0,className:"btn",children:"Download CV"}),p(Qi,{to:"/contact",className:"btn btn-primary",children:"Let's Talk"})]})},Cp="/portfolio/assets/bg-ea2eaa0d.png",Ep="/portfolio/assets/logo-68a309c2.png",_p=({myData:e})=>{const{title:t,img:n,textHighlight:r,btn:l,width:i}=e,o=gl.section`
-  padding: 5rem 2rem;
+  padding: 5rem 8rem;
+  max-width:100%;
   img {
     min-width: 10rem;
     height: 20rem;
@@ -289,9 +290,10 @@ input, textarea{
   }
   .flex{
   width:100%;
-   display:flex;
+  display:flex;
   justify-content:space-around;
   align-items:center;
+  gap:10px;
   flex-wrap:wrap-reverse;
   }
   .hero-section-data {
@@ -361,7 +363,7 @@ input, textarea{
       border-radius:2rem;
       position: absolute;
       left: 35%;
-      top: -3rem;
+      top: -6rem;
       z-index: -1;
     }
   }
@@ -370,8 +372,21 @@ input, textarea{
     height: auto;
     
   }
-
   @media (max-width: ${({theme:a})=>a.media.mobile}) {
+    padding:5rem 2rem;
+    align-items:center;
+    gap:5rem;
+    figure{
+    margin: 2rem auto;
+    img{
+      width:300px;
+      height:35rem;
+      position:relative;
+    }
+    }
+  }
+  @media (max-width: ${({theme:a})=>a.media.small}) {
+  padding:5rem 2rem;
     .text-animate{
     width:65%;
     text-align:center;
@@ -382,16 +397,7 @@ input, textarea{
     section{
       padding: 5rem 0rem
     }
-    .grid {
-      padding: 12rem 0rem;
-      gap: 10rem;
-      margin:-2rem auto;
-      width:90%;
-      display:flex;
-      justify-contents: center;
-      align-items:center;
-      flex-wrap: wrap-reverse;
-    }
+
     .hero-section-data,.hero-section-image{
     min-width:100%;
     display:flex;
@@ -409,8 +415,10 @@ input, textarea{
     }
     }
     figure{
+    padding:2rem auto;
+    margin:1rem auto 0 2.5rem;
     img{
-      width:300px;
+      width:250px;
       height:30rem;
       position:relative;
     }
@@ -426,8 +434,8 @@ input, textarea{
     }
   
   }
-`;return p(o,{children:p("div",{className:"contianer",children:A("div",{className:"flex grid-four-column",children:[A("div",{className:"hero-section-data",children:[p("p",{className:"intro-data",children:"Hello I'm"}),p("h1",{"data-text":`${t}`,className:"text-animate",children:t}),A("p",{className:"title-highlight",children:[r,p("br",{})]}),l]}),p("div",{className:"hero-section-image",children:p("figure",{children:p("img",{src:n,alt:"Hreo section images"})})})]})})})},ug=()=>{const[e,t]=_.useState();return _.useEffect(()=>window.innerWidth<="768"?t(Ep):t(Cp),[]),p(It,{children:p(_p,{myData:{img:e,title:"Rohit........................",textHighlight:`Hi, I am Rohit.
-   I am currently doing my internship as a tutor for the DCA course. Before this,I have also worked as a computer operator in Covid-19 at the Vaccination Center. `,btn:p(sg,{}),width:"10%"}})})},cg="_map_1uurm_1",dg={map:cg},fg=()=>A(It,{children:[p("br",{}),p("br",{}),p("div",{className:dg.map,children:p("iframe",{title:"My Address",src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7005.732767481431!2d77.10133605869139!3d28.60378500000003!2m3!1f0!2f0!3f0!3m2! 1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1ca91a4707a1%3A0x2f562bf9febc5c2f!2z4KSX4KSy4KWAIOCkqOCkguCkrOCksCAwLCDgpLjgpILgpKQg4KSu4KWL4KS54KSy4KWN4KSy4KS-LCDgpK7gpYfgpKgg4KS44KS-4KSX4KSw4KSq4KWB4KSwLCDgpLjgpL7gpJfgpLAg4KSq4KWB4KSwLCDgpKjgpIgg4KSm4KS_4KSy4KWN4KSy4KWALCDgpKbgpL_gpLLgpY3gpLLgpYAgMTEwMDQ2!5e0!3m2!1shi!2sin!4v1680312021352!5m2!1shi!2sin",style:{सीम:0,width:"100%",height:"100%"},allowFullScreen:"true",लोडिंग:"आलसी",रेफररपॉलिसी:"नो-रेफरर-व्हेन-डाउनग्रेड"})})]}),pg="_navigation_qxeve_21",hg="_icon_qxeve_49",mg="_title_qxeve_63",gg="_active_qxeve_89",Dl={navigation:pg,icon:hg,title:mg,active:gg};var Np={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},vc=Ve.createContext&&Ve.createContext(Np),tn=globalThis&&globalThis.__assign||function(){return tn=Object.assign||function(e){for(var t,n=1,r=arguments.length;n<r;n++){t=arguments[n];for(var l in t)Object.prototype.hasOwnProperty.call(t,l)&&(e[l]=t[l])}return e},tn.apply(this,arguments)},vg=globalThis&&globalThis.__rest||function(e,t){var n={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.indexOf(r)<0&&(n[r]=e[r]);if(e!=null&&typeof Object.getOwnPropertySymbols=="function")for(var l=0,r=Object.getOwnPropertySymbols(e);l<r.length;l++)t.indexOf(r[l])<0&&Object.prototype.propertyIsEnumerable.call(e,r[l])&&(n[r[l]]=e[r[l]]);return n};function Pp(e){return e&&e.map(function(t,n){return Ve.createElement(t.tag,tn({key:n},t.attr),Pp(t.child))})}function sn(e){return function(t){return Ve.createElement(yg,tn({attr:tn({},e.attr)},t),Pp(e.child))}}function yg(e){var t=function(n){var r=e.attr,l=e.size,i=e.title,o=vg(e,["attr","size","title"]),a=l||n.size||"1em",s;return n.className&&(s=n.className),e.className&&(s=(s?s+" ":"")+e.className),Ve.createElement("svg",tn({stroke:"currentColor",fill:"currentColor",strokeWidth:"0"},n.attr,r,o,{className:s,style:tn(tn({color:e.color||n.color},n.style),e.style),height:a,width:a,xmlns:"http://www.w3.org/2000/svg"}),i&&Ve.createElement("title",null,i),e.children)};return vc!==void 0?Ve.createElement(vc.Consumer,null,function(n){return t(n)}):t(Np)}function wg(e){return sn({tag:"svg",attr:{viewBox:"0 0 1024 1024"},child:[{tag:"path",attr:{d:"M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"}}]})(e)}function Sg(e){return sn({tag:"svg",attr:{viewBox:"0 0 1024 1024"},child:[{tag:"path",attr:{d:"M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"}}]})(e)}function kg(e){return sn({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M6 22h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3zM5 8V5c0-.805.55-.988 1-1h13v12H5V8z"}},{tag:"path",attr:{d:"M8 6h9v2H8z"}}]})(e)}function xg(e){return sn({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M16 2H8C4.691 2 2 4.691 2 8v13a1 1 0 0 0 1 1h13c3.309 0 6-2.691 6-6V8c0-3.309-2.691-6-6-6zm4 14c0 2.206-1.794 4-4 4H4V8c0-2.206 1.794-4 4-4h8c2.206 0 4 1.794 4 4v8z"}},{tag:"path",attr:{d:"M7 9h10v2H7zm0 4h7v2H7z"}}]})(e)}function Cg(e){return sn({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"g",attr:{},child:[{tag:"path",attr:{fill:"none",d:"M0 0h24v24H0z"}},{tag:"path",attr:{d:"M3.161 4.469a6.5 6.5 0 0 1 8.84-.328 6.5 6.5 0 0 1 9.178 9.154l-7.765 7.79a2 2 0 0 1-2.719.102l-.11-.101-7.764-7.791a6.5 6.5 0 0 1 .34-8.826zm1.414 1.414a4.5 4.5 0 0 0-.146 6.21l.146.154L12 19.672l5.303-5.304-3.535-3.535-1.06 1.06a3 3 0 1 1-4.244-4.242l2.102-2.103a4.501 4.501 0 0 0-5.837.189l-.154.146zm8.486 2.828a1 1 0 0 1 1.414 0l4.242 4.242.708-.706a4.5 4.5 0 0 0-6.211-6.51l-.153.146-3.182 3.182a1 1 0 0 0-.078 1.327l.078.087a1 1 0 0 0 1.327.078l.087-.078 1.768-1.768z"}}]}]})(e)}const Eg=[{id:3,icons:p(kg,{}),title:"Experience",text:"Experience",link:"/experience"},{id:4,icons:p(Cg,{}),title:"About",text:"About",link:"/about"},{id:1,icons:p(wg,{}),title:"Home",link:"/"},{id:2,icons:p(Sg,{}),title:"Projects",text:"Projects",link:"/services"},{id:5,icons:p(xg,{}),title:"Contact",text:"Contact",link:"/contact"}],_g=e=>{const[t,n]=_.useState(e.path);return p("nav",{children:p("ul",{className:`scales ${Dl.navigation}`,children:Eg.map(r=>p("li",{onClick:()=>n(r.link),className:e.path===r.link?Dl.active:" ",children:A(Qi,{to:r.link,children:[p("span",{className:Dl.icon,children:r.icons}),p("span",{className:Dl.title,children:r.title})]})}))})})},Ng="_aboutUs_mnplc_1",Pg="_about_mnplc_1",Lg="_aboutContent_mnplc_15",$g="_aboutCards_mnplc_61",zg="_card_mnplc_72",Rg="_aboutCard_mnplc_61",Tg="_aboutIcon_mnplc_108",Og="_pera_mnplc_121",Ig="_quali_mnplc_142",Ag="_me_mnplc_150",ut={aboutUs:Ng,about:Pg,aboutContent:Lg,aboutCards:$g,card:zg,aboutCard:Rg,aboutIcon:Tg,pera:Og,quali:Ig,me:Ag},jg=()=>{const[e,t]=_.useState([]);_.useEffect(()=>{const n=document.querySelectorAll(".transX");t(n)},[]),e.forEach(n=>{window.addEventListener("scroll",()=>{let r=n.getBoundingClientRect().top,l=window.innerHeight;r<l-101?(n.style.transform="translateX(0%) scale(1)",n.style.opacity=1,n.style.transition="0.5s"):(n.style.transform="translateX(-100%) scale(1)",n.style.transition="0.5s",n.style.opacity=0)})})},Mg=()=>{const[e,t]=_.useState([]);_.useEffect(()=>{const n=document.querySelectorAll(".scale");t(n)},[]),e.forEach(n=>{window.addEventListener("scroll",()=>{let r=n.getBoundingClientRect().top,l=window.innerHeight;r<l-101?(n.style.transform="scale(1)",n.style.opacity=1,n.style.transition="0.5s"):(n.style.transform="scale(0)",n.style.transition="0.5s",n.style.opacity=0)})})},Dg=()=>{const[e,t]=_.useState([]);_.useEffect(()=>{const n=document.querySelectorAll(".transY");t(n)},[]),e.forEach(n=>{window.addEventListener("scroll",()=>{let r=n.getBoundingClientRect().top,l=window.innerHeight;r<l-101?(n.style.transform="translateX(0%) scale(1)",n.style.opacity=1,n.style.transition="0.5s"):(n.style.transform="translateX(100%) scale(1)",n.style.transition="0.5s",n.style.opacity=0)})})},Fg=()=>{const[e,t]=_.useState([]);_.useEffect(()=>{const n=document.querySelectorAll(".load");t(n)},[]),window.addEventListener("load",()=>{e.forEach(n=>{n.style.transform="translateX(0%)",n.style.opacity=1})})},vl=()=>A(It,{children:[p(Dg,{}),p(jg,{}),p(Mg,{}),p(Fg,{})]});function Ug(e){return sn({tag:"svg",attr:{viewBox:"0 0 384 512"},child:[{tag:"path",attr:{d:"M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z"}}]})(e)}function Bg(e){return sn({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"}},{tag:"circle",attr:{cx:"9",cy:"7",r:"4"}},{tag:"path",attr:{d:"M23 21v-2a4 4 0 0 0-3-3.87"}},{tag:"path",attr:{d:"M16 3.13a4 4 0 0 1 0 7.75"}}]})(e)}function Hg(e){return sn({tag:"svg",attr:{viewBox:"0 0 16 16",fill:"currentColor"},child:[{tag:"path",attr:{fillRule:"evenodd",clipRule:"evenodd",d:"M7.70996 3H14.5L15.01 3.5V7H14V5.98999H7.68994L6.82996 6.84998L6.47998 7H1.98999V7.48999V11.49V13H7V14H1.51001L1.01001 13.5V6.5V2.5L1.51001 2H6.51001L6.85999 2.15002L7.70996 3ZM7.48999 5H13.99L14 4.01001H7.5L7.14001 3.85999L6.29004 3.01001H2V6.01001H6.28003L7.14001 5.15002L7.48999 5Z"}},{tag:"rect",attr:{x:"8",y:"8",width:"1",height:"6"}},{tag:"rect",attr:{x:"10",y:"8",width:"1",height:"6"}},{tag:"rect",attr:{x:"12.0041",y:"8.35193",width:"1",height:"6",transform:"rotate(-20 12.0041 8.35193)"}}]})(e)}const Vg=[{id:1,icon:Ug,cl:"transX",text:"Experience",result:"1+ years"},{id:2,icon:Bg,text:"Client",cl:"transY",result:"30+ students"},{id:3,icon:Hg,text:"Completed",cl:"transX",result:"25+ students"}],Wg=[{id:1,text:"10th Metric Examination",cl:"transY",result:"Passed in 2015 from CBSE Board"},{id:2,text:"12th intermediate Examination",cl:"transX",result:"Passed in 2017 from CBSE Board"},{id:3,text:"Diploma in Computer Applications  (DCA)",cl:"transY",result:"Completed in 2018 from RIIT INFOTECH PVT LTD"},{id:4,text:"B.A Programme",cl:"transX",result:"Completed in 2021 from SOL University OF Delhi"}],Vs=gl.button`
+`;return p(o,{children:p("div",{className:"contianer",children:A("div",{className:"flex",children:[A("div",{className:"hero-section-data",children:[p("p",{className:"intro-data",children:"Hello I'm"}),p("h1",{"data-text":`${t}`,className:"text-animate",children:t}),A("p",{className:"title-highlight",children:[r,p("br",{})]}),l]}),p("div",{className:"hero-section-image",children:p("figure",{children:p("img",{src:n,alt:"Hreo section images"})})})]})})})},ug=()=>{const[e,t]=_.useState();return _.useEffect(()=>window.innerWidth<="768"?t(Ep):t(Cp),[]),p(It,{children:p(_p,{myData:{img:e,title:"Rohit........................",textHighlight:`Hi, I am Rohit.
+   I am currently doing my internship as a tutor for the DCA course. Before this,I have also worked as a computer operator in Covid-19 at the Vaccination Center. `,btn:p(sg,{}),width:"20%"}})})},cg="_map_1uurm_1",dg={map:cg},fg=()=>A(It,{children:[p("br",{}),p("br",{}),p("div",{className:dg.map,children:p("iframe",{title:"My Address",src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7005.732767481431!2d77.10133605869139!3d28.60378500000003!2m3!1f0!2f0!3f0!3m2! 1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1ca91a4707a1%3A0x2f562bf9febc5c2f!2z4KSX4KSy4KWAIOCkqOCkguCkrOCksCAwLCDgpLjgpILgpKQg4KSu4KWL4KS54KSy4KWN4KSy4KS-LCDgpK7gpYfgpKgg4KS44KS-4KSX4KSw4KSq4KWB4KSwLCDgpLjgpL7gpJfgpLAg4KSq4KWB4KSwLCDgpKjgpIgg4KSm4KS_4KSy4KWN4KSy4KWALCDgpKbgpL_gpLLgpY3gpLLgpYAgMTEwMDQ2!5e0!3m2!1shi!2sin!4v1680312021352!5m2!1shi!2sin",style:{सीम:0,width:"100%",height:"100%"},allowFullScreen:"true",लोडिंग:"आलसी",रेफररपॉलिसी:"नो-रेफरर-व्हेन-डाउनग्रेड"})})]}),pg="_navigation_1x2ow_21",hg="_icon_1x2ow_49",mg="_title_1x2ow_63",gg="_active_1x2ow_89",Dl={navigation:pg,icon:hg,title:mg,active:gg};var Np={color:void 0,size:void 0,className:void 0,style:void 0,attr:void 0},vc=Ve.createContext&&Ve.createContext(Np),tn=globalThis&&globalThis.__assign||function(){return tn=Object.assign||function(e){for(var t,n=1,r=arguments.length;n<r;n++){t=arguments[n];for(var l in t)Object.prototype.hasOwnProperty.call(t,l)&&(e[l]=t[l])}return e},tn.apply(this,arguments)},vg=globalThis&&globalThis.__rest||function(e,t){var n={};for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&t.indexOf(r)<0&&(n[r]=e[r]);if(e!=null&&typeof Object.getOwnPropertySymbols=="function")for(var l=0,r=Object.getOwnPropertySymbols(e);l<r.length;l++)t.indexOf(r[l])<0&&Object.prototype.propertyIsEnumerable.call(e,r[l])&&(n[r[l]]=e[r[l]]);return n};function Pp(e){return e&&e.map(function(t,n){return Ve.createElement(t.tag,tn({key:n},t.attr),Pp(t.child))})}function sn(e){return function(t){return Ve.createElement(yg,tn({attr:tn({},e.attr)},t),Pp(e.child))}}function yg(e){var t=function(n){var r=e.attr,l=e.size,i=e.title,o=vg(e,["attr","size","title"]),a=l||n.size||"1em",s;return n.className&&(s=n.className),e.className&&(s=(s?s+" ":"")+e.className),Ve.createElement("svg",tn({stroke:"currentColor",fill:"currentColor",strokeWidth:"0"},n.attr,r,o,{className:s,style:tn(tn({color:e.color||n.color},n.style),e.style),height:a,width:a,xmlns:"http://www.w3.org/2000/svg"}),i&&Ve.createElement("title",null,i),e.children)};return vc!==void 0?Ve.createElement(vc.Consumer,null,function(n){return t(n)}):t(Np)}function wg(e){return sn({tag:"svg",attr:{viewBox:"0 0 1024 1024"},child:[{tag:"path",attr:{d:"M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7 23.1 23.1L882 542.3h-96.1z"}}]})(e)}function Sg(e){return sn({tag:"svg",attr:{viewBox:"0 0 1024 1024"},child:[{tag:"path",attr:{d:"M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"}}]})(e)}function kg(e){return sn({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M6 22h15v-2H6.012C5.55 19.988 5 19.805 5 19s.55-.988 1.012-1H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3zM5 8V5c0-.805.55-.988 1-1h13v12H5V8z"}},{tag:"path",attr:{d:"M8 6h9v2H8z"}}]})(e)}function xg(e){return sn({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M16 2H8C4.691 2 2 4.691 2 8v13a1 1 0 0 0 1 1h13c3.309 0 6-2.691 6-6V8c0-3.309-2.691-6-6-6zm4 14c0 2.206-1.794 4-4 4H4V8c0-2.206 1.794-4 4-4h8c2.206 0 4 1.794 4 4v8z"}},{tag:"path",attr:{d:"M7 9h10v2H7zm0 4h7v2H7z"}}]})(e)}function Cg(e){return sn({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"g",attr:{},child:[{tag:"path",attr:{fill:"none",d:"M0 0h24v24H0z"}},{tag:"path",attr:{d:"M3.161 4.469a6.5 6.5 0 0 1 8.84-.328 6.5 6.5 0 0 1 9.178 9.154l-7.765 7.79a2 2 0 0 1-2.719.102l-.11-.101-7.764-7.791a6.5 6.5 0 0 1 .34-8.826zm1.414 1.414a4.5 4.5 0 0 0-.146 6.21l.146.154L12 19.672l5.303-5.304-3.535-3.535-1.06 1.06a3 3 0 1 1-4.244-4.242l2.102-2.103a4.501 4.501 0 0 0-5.837.189l-.154.146zm8.486 2.828a1 1 0 0 1 1.414 0l4.242 4.242.708-.706a4.5 4.5 0 0 0-6.211-6.51l-.153.146-3.182 3.182a1 1 0 0 0-.078 1.327l.078.087a1 1 0 0 0 1.327.078l.087-.078 1.768-1.768z"}}]}]})(e)}const Eg=[{id:3,icons:p(kg,{}),title:"Experience",text:"Experience",link:"/experience"},{id:4,icons:p(Cg,{}),title:"About",text:"About",link:"/about"},{id:1,icons:p(wg,{}),title:"Home",link:"/"},{id:2,icons:p(Sg,{}),title:"Projects",text:"Projects",link:"/services"},{id:5,icons:p(xg,{}),title:"Contact",text:"Contact",link:"/contact"}],_g=e=>{const[t,n]=_.useState(e.path);return p("nav",{children:p("ul",{className:`scales ${Dl.navigation}`,children:Eg.map(r=>p("li",{onClick:()=>n(r.link),className:e.path===r.link?Dl.active:" ",children:A(Qi,{to:r.link,children:[p("span",{className:Dl.icon,children:r.icons}),p("span",{className:Dl.title,children:r.title})]})}))})})},Ng="_aboutUs_mnplc_1",Pg="_about_mnplc_1",Lg="_aboutContent_mnplc_15",$g="_aboutCards_mnplc_61",zg="_card_mnplc_72",Rg="_aboutCard_mnplc_61",Tg="_aboutIcon_mnplc_108",Og="_pera_mnplc_121",Ig="_quali_mnplc_142",Ag="_me_mnplc_150",ut={aboutUs:Ng,about:Pg,aboutContent:Lg,aboutCards:$g,card:zg,aboutCard:Rg,aboutIcon:Tg,pera:Og,quali:Ig,me:Ag},jg=()=>{const[e,t]=_.useState([]);_.useEffect(()=>{const n=document.querySelectorAll(".transX");t(n)},[]),e.forEach(n=>{window.addEventListener("scroll",()=>{let r=n.getBoundingClientRect().top,l=window.innerHeight;r<l-101?(n.style.transform="translateX(0%) scale(1)",n.style.opacity=1,n.style.transition="0.5s"):(n.style.transform="translateX(-100%) scale(1)",n.style.transition="0.5s",n.style.opacity=0)})})},Mg=()=>{const[e,t]=_.useState([]);_.useEffect(()=>{const n=document.querySelectorAll(".scale");t(n)},[]),e.forEach(n=>{window.addEventListener("scroll",()=>{let r=n.getBoundingClientRect().top,l=window.innerHeight;r<l-101?(n.style.transform="scale(1)",n.style.opacity=1,n.style.transition="0.5s"):(n.style.transform="scale(0)",n.style.transition="0.5s",n.style.opacity=0)})})},Dg=()=>{const[e,t]=_.useState([]);_.useEffect(()=>{const n=document.querySelectorAll(".transY");t(n)},[]),e.forEach(n=>{window.addEventListener("scroll",()=>{let r=n.getBoundingClientRect().top,l=window.innerHeight;r<l-101?(n.style.transform="translateX(0%) scale(1)",n.style.opacity=1,n.style.transition="0.5s"):(n.style.transform="translateX(100%) scale(1)",n.style.transition="0.5s",n.style.opacity=0)})})},Fg=()=>{const[e,t]=_.useState([]);_.useEffect(()=>{const n=document.querySelectorAll(".load");t(n)},[]),window.addEventListener("load",()=>{e.forEach(n=>{n.style.transform="translateX(0%)",n.style.opacity=1})})},vl=()=>A(It,{children:[p(Dg,{}),p(jg,{}),p(Mg,{}),p(Fg,{})]});function Ug(e){return sn({tag:"svg",attr:{viewBox:"0 0 384 512"},child:[{tag:"path",attr:{d:"M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z"}}]})(e)}function Bg(e){return sn({tag:"svg",attr:{viewBox:"0 0 24 24",fill:"none",stroke:"currentColor",strokeWidth:"2",strokeLinecap:"round",strokeLinejoin:"round"},child:[{tag:"path",attr:{d:"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"}},{tag:"circle",attr:{cx:"9",cy:"7",r:"4"}},{tag:"path",attr:{d:"M23 21v-2a4 4 0 0 0-3-3.87"}},{tag:"path",attr:{d:"M16 3.13a4 4 0 0 1 0 7.75"}}]})(e)}function Hg(e){return sn({tag:"svg",attr:{viewBox:"0 0 16 16",fill:"currentColor"},child:[{tag:"path",attr:{fillRule:"evenodd",clipRule:"evenodd",d:"M7.70996 3H14.5L15.01 3.5V7H14V5.98999H7.68994L6.82996 6.84998L6.47998 7H1.98999V7.48999V11.49V13H7V14H1.51001L1.01001 13.5V6.5V2.5L1.51001 2H6.51001L6.85999 2.15002L7.70996 3ZM7.48999 5H13.99L14 4.01001H7.5L7.14001 3.85999L6.29004 3.01001H2V6.01001H6.28003L7.14001 5.15002L7.48999 5Z"}},{tag:"rect",attr:{x:"8",y:"8",width:"1",height:"6"}},{tag:"rect",attr:{x:"10",y:"8",width:"1",height:"6"}},{tag:"rect",attr:{x:"12.0041",y:"8.35193",width:"1",height:"6",transform:"rotate(-20 12.0041 8.35193)"}}]})(e)}const Vg=[{id:1,icon:Ug,cl:"transX",text:"Experience",result:"1+ years"},{id:2,icon:Bg,text:"Client",cl:"transY",result:"30+ students"},{id:3,icon:Hg,text:"Completed",cl:"transX",result:"25+ students"}],Wg=[{id:1,text:"10th Metric Examination",cl:"transY",result:"Passed in 2015 from CBSE Board"},{id:2,text:"12th intermediate Examination",cl:"transX",result:"Passed in 2017 from CBSE Board"},{id:3,text:"Diploma in Computer Applications  (DCA)",cl:"transY",result:"Completed in 2018 from RIIT INFOTECH PVT LTD"},{id:4,text:"B.A Programme",cl:"transX",result:"Completed in 2021 from SOL University OF Delhi"}],Vs=gl.button`
   text-decoration: none;
   max-width: auto;
   background-color: rgb(240 150 0);
@@ -515,7 +523,7 @@ input, textarea{
   border-radius:1.5rem;
  }
   .footer-bottom--section {
-    padding-top: 9rem;
+    padding-top: 8rem;
 
     hr {
       margin-bottom: 2rem;
@@ -550,7 +558,6 @@ input, textarea{
     }
 
     footer {
-    
       margin-bottom: 2rem;
       .footer-about{
         width:80%;
@@ -558,23 +565,21 @@ input, textarea{
       
       .footer-subscribe{
         width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:left;
+        margin:2rem auto;
         input{
-          width:350px;
+          width:100%;
         }
       }
     }
     .footer-subscribe form input{
-    margin: 2rem -1rem;
-    }
-    .footer-subscribe input{
     width:100%;
-      display:flex;
-      flex-direction:column;
-      border-radius:1.5rem;
-      
+    margin: 2rem auto;
     }
-    .footer-bottom--section {
-     padding:4.8rem 0 4rem 0;
+  .footer-bottom--section {
+    padding-top: 4rem;
       div{
         text-align:left;
       }
