@@ -65,28 +65,32 @@ const HeroSection = ({myData})=>{
      border-radius:1.8rem 1rem 1.8rem 1.8rem;
        box-shadow:-1px -1px 10px ${({theme})=>theme.colors.bgColors},5px 5px 10px #000;
      }
-  /*  &:before{
+    &:before{
         content:'';
         position:absolute;
-        top:0%;left:0%;
         width:100%;
         height:100%;
         border-radius:2rem;
         background-image: linear-gradient(45deg, rgba(0,0,0,0.3),rgba(,0,0,0,0.8));
         z-index:1;
         transition:0.5s;
-      }*/
+      }
     &::after {
       content: "";
-      width: 85%;
+      width: 70%;
       height: 70%;
       background-color: rgba(255, 150,0, 0.4);
       border-radius:2rem;
       position: absolute;
-      left: 35%;
-      top: -6rem;
+      left: 50%;
+      top: -5rem;
       z-index: -1;
     }
+    &:hover:before{
+    height:0%;
+    transform:translate(-50%,-50%)
+    width:0%;
+     }
   }
   .img-style {
     width: 100%;
@@ -103,7 +107,7 @@ const HeroSection = ({myData})=>{
       border-radius:2rem;
     img{
       width:100%;
-      height:35rem;
+      height:30rem;
       position:relative;
     }
     }
@@ -141,12 +145,16 @@ const HeroSection = ({myData})=>{
     img{
     border-radius:2rem;
       width:calc(100% - 110px);
-      height:25rem;
       position:relative;
       border:5px inset ${({theme})=>theme.colors.bgColors};
       border-right:0px;
       border-bottom:0px;
     }
+    &:hover:before{
+    
+    height:30%;
+    width:30%;
+     }
     }
     figure::after {
       content: "";
@@ -165,9 +173,11 @@ const HeroSection = ({myData})=>{
       right: 10%;
       bottom: -10%;
       /* bottom: 10%; */
+      background-image: linear-gradient(305deg, rgba(0,0,0,0.3),rgba(,0,0,0,0.8));
       background-color: rgba(250,80,0, 1);
       border-radius:2rem;
       z-index:1;
+      transition: background 0.5s;
       border:5px solid ${({theme})=>theme.colors.bgColors};
     }
   }
