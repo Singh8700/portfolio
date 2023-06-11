@@ -1,6 +1,9 @@
 import style from "./Experience.module.css";
 import Animation from "../../Animation";
 import { frontEnd, Other} from "./ExperienceApi.jsx"
+import Posters from "../portfolio/Posters"
+import LogoPosters from "../portfolio/LogoProjecta"
+import Contact from "../contact/Contact"
 const Experience=()=>{
  
   return(
@@ -62,6 +65,9 @@ const Experience=()=>{
         </div>
       </div>
     </section>
+    <Posters/>
+    <LogoPosters/>
+    <Contact/>
     </>
     )
 }

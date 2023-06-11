@@ -4,6 +4,8 @@ import CV from "./CV";
 import pic01 from "../../img/bg.png";
 import pic00 from "../../img/logo.png";
 import HeroSection from "../heroSection/HeroSection"
+import Project from "../portfolio/Project"
+import Contact from "../contact/Contact"
 const Header=()=>{
  const [imgs,setImgs] = useState();
  useEffect(()=>{
@@ -24,6 +26,8 @@ const Header=()=>{
   return(
    <>
    <HeroSection myData={datas}/>
+   <Project/>
+   <Contact/>
   </>
     )
 }

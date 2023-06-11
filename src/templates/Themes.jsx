@@ -2,6 +2,7 @@
 const Theme = {
   colors:{
     bg:"#eee",
+    bgColors:"#1f1f38",
     box_bg:"#0ef",
     btns:"rgb(240 150 0)",
     white:"#fff",

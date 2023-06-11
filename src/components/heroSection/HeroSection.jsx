@@ -54,30 +54,28 @@ const HeroSection = ({myData})=>{
   }
   figure {
     position: relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:2rem;
+    border:10px solid ${({theme})=>theme.colors.bgColors};
+      border-left:0px;
+      border-bottom:0px;
      img{
-       border-radius:2rem;
-       box-shadow:-5px -5px 10px #eee;
+     border-radius:1.8rem 1rem 1.8rem 1.8rem;
+       box-shadow:-1px -1px 10px ${({theme})=>theme.colors.bgColors},5px 5px 10px #000;
      }
-         &:hover{
-      &:before{
-        left:50%;
-        top:50%;
-        transfrom:translate(-50%,-50%);
-        width:0%;
-        height:0%
-      }
-    }
-     &:before{
+  /*  &:before{
         content:'';
         position:absolute;
-        top:0;left:0;
+        top:0%;left:0%;
         width:100%;
         height:100%;
         border-radius:2rem;
         background-image: linear-gradient(45deg, rgba(0,0,0,0.3),rgba(,0,0,0,0.8));
         z-index:1;
         transition:0.5s;
-      }
+      }*/
     &::after {
       content: "";
       width: 85%;
@@ -100,9 +98,11 @@ const HeroSection = ({myData})=>{
     align-items:center;
     gap:5rem;
     figure{
-    margin: 2rem auto;
+    width:100%;
+    
+      border-radius:2rem;
     img{
-      width:300px;
+      width:100%;
       height:35rem;
       position:relative;
     }
@@ -113,9 +113,6 @@ const HeroSection = ({myData})=>{
     .text-animate{
     width:65%;
     text-align:center;
-  }
-  img {
-    height:30rem;
   }
     section{
       padding: 5rem 0rem
@@ -140,22 +137,39 @@ const HeroSection = ({myData})=>{
     figure{
     padding:2rem auto;
     margin:1rem auto 0 2.5rem;
+    border:0;
     img{
-      width:250px;
-      height:30rem;
+    border-radius:2rem;
+      width:calc(100% - 110px);
+      height:25rem;
       position:relative;
+      border:5px inset ${({theme})=>theme.colors.bgColors};
+      border-right:0px;
+      border-bottom:0px;
     }
     }
     figure::after {
       content: "";
       width: 50%;
-      height: 60%;
-      left: -10%;
-      top: -10%;
+      height: 50%;
+      left: 0%;
+      top: -20%;
       /* bottom: 10%; */
       background-color: rgba(0, 200, 248, 0.6);
     }
-  
+    figure::before {
+      content: "";
+      position:absolute;
+      width: 30%;
+      height: 30%;
+      right: 10%;
+      bottom: -10%;
+      /* bottom: 10%; */
+      background-color: rgba(250,80,0, 1);
+      border-radius:2rem;
+      z-index:1;
+      border:5px solid ${({theme})=>theme.colors.bgColors};
+    }
   }
 `;
   return (

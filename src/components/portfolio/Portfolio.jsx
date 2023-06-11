@@ -1,8 +1,10 @@
 import Animation from "../../Animation"
 import { NavLink} from "react-router-dom";
 import style from"./Portfolio.module.css";
-import { Pic,Posters,Logos, Design } from "./portfolioApi.jsx"
-
+import Project from "./Project"
+import Posters from "./Posters"
+import LogoProjects from "./LogoProjecta"
+import WebProjects from "./WebProjects"
 const Portfolio=()=>{
   
   return(
@@ -11,105 +13,12 @@ const Portfolio=()=>{
     <section id="services" className="transformX">
     <h5 className={`scales h5`}>Let See</h5>
      <h2 className={`scales h2`}>Projects</h2>
-      
-      <div className={`container scales ${style.containers}`}>
-     <div className={`${style.cards}`}>
 
-      <h2 className="tit"> Live Projects </h2>
-       <div className="cols">
-      {
-        Pic.map((element)=>{
-          return(
-         <div key={element.id} className={`${style.cl} ${element.cl}`}>
-            <article className={style.card}>
-            {element.news?
-            <span className={style.news}>
-            <img src={element.tit}/>
-            </span>:<span></span>
-            }
-            <div className={style.imgs}>
-              <img src={element.imgs} alt={element.title} className={element.cll}/>      
-            </div>
-            <div className={`${style.title}`}>
-              <h2 className="cols-title">{element.title}</h2>
-              <h4>{element.small}</h4>
-             <a href={element.link} className="btn btn-primary">
-              Live Preview
-              </a>
-            </div>
-           
-          </article>
-         
-        </div>
-          )
-        })
-      }
-      </div>
-      <h2 className="tit"> Poster Demos </h2>
-      <div className="cols">
-      {
-        Posters.map((element)=>{
-          return(
-         <div key={element.id} className={`${style.cl} ${element.cl}`}>
-            <article className={style.card}>
-            <div className={style.imgs}>
-              <img src={element.imgs} alt={element.title} className={element.cll}/>
-            </div>
-            <div className={style.title}>
-              <h3>{element.title}</h3>
-              <h5>{element.small}</h5>
-              <a href={element.link} className="btn btn-primary">View Demo</a>
-            </div>
-          </article>
-        </div>
-          )
-        })
-      }
-      </div>
-      <h2 className="tit"> Logos Demo </h2>
-     <div className="cols">
-      {
-        Logos.map((element)=>{
-          return(
-         <div key={element.id} className={`${style.cl} ${element.cl}`}>
-            <article className={style.card}>
-            <div className={style.imgs}>
-              <img src={element.imgs} alt={element.title} className={element.cll}/>
-            </div>
-            <div className={style.title}>
-              <h3>{element.title}</h3>
-              <h5>{element.small}</h5>
-              <a href={element.link} className="btn btn-primary">View Demo</a>
-            </div>
-          </article>
-        </div>
-          )
-        })
-      }
-     </div>
-      <h2 className="tit"> Web Design Demo </h2>
-     <div className="cols">
-       {
-        Design.map((element)=>{
-          return(
-         <div key={element.id} className={`${style.cl} ${element.cl}`}>
-            <article className={style.card}>
-            <div className={style.imgs}>
-              <img src={element.imgs} alt={element.title} className={element.cll}/>
-            </div>
-            <div className={style.title}>
-              <h3>{element.title}</h3>
-              <h5>{element.small}</h5>
-              <a href={element.link} className="btn btn-primary">View Demo</a>
-            </div>
-          </article>
-        </div>
-          )
-        })
-      }
-     </div>
-        </div>
-      </div>
+        <Project/>
+        <Posters/>
+        <LogoProjects/>
+        <WebProjects/>
+        
     </section>
    </>
     )

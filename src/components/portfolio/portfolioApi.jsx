@@ -1,5 +1,6 @@
 import portpic01 from "../../Assets/port01.jpg";
 import imgsearch from "../../Assets/imgsearch.jpg";
+import cardEffect from "../../Assets/cardEffect.jpg";
 import port00 from "../../Assets/port00.jpg";
 import redux from "../../Assets/redux.jpg";
 import portpic03 from "../../Assets/port03.jpg";
@@ -46,6 +47,18 @@ const Pic=[
     small:"Manage your notes securely and efficiently",
     link:'https://singh8700.github.io/userListProject/'
   },
+  {
+    key:6,
+    imgs:cardEffect,
+    tit:New,
+    news:false,
+    cl:"transX",
+    cll:"transY",
+    title:"Card Effect",
+    small:"Amazing Card Effect on mouse moves every angle",
+    link:'https://singh8700.github.io/CardsEffects-/'
+    
+  },
     {
       key:2,
      imgs:portpic04,
@@ -68,7 +81,7 @@ const Pic=[
       link:'https://singh8700.github.io/DOB/'
     }
     ];
-const Posters=[
+const Poster=[
     {
       key:1,
      imgs:poster01,
@@ -136,7 +149,7 @@ const Posters=[
     ];
  export {
    Pic,
-   Posters,
+   Poster,
    Logos,
    Design
  }
