@@ -269,7 +269,7 @@ input, textarea{
     columns:1;
   }
     }
-`,dg="/portfolio/assets/rohit@8700-f54d41a0.pdf",fg=()=>{const e=vl.div`
+`,dg="/portfolio/assets/rohit@8700-5553a2e1.pdf",fg=()=>{const e=vl.div`
   margin-top: 2.5rem;
   gap:3rem;
   display:flex;
