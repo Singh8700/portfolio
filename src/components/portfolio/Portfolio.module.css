@@ -75,8 +75,8 @@ section {
   width: 50%;
   height: 20%;
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: -0.5%;
+  left: -0.5%;
   transform: translate(-1%, -1%);
   z-index: 1;
 }
@@ -104,5 +104,9 @@ section {
   }
   .cards .cl {
     width: 400px;
+  }
+  .cards .news {
+    top: 0;
+    left: 0;
   }
 }
