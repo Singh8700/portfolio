@@ -25,12 +25,12 @@
   transition: var(--transition-all);
 }
 
-.option h4 {
+.option h3 {
   font-size: 3.5rem;
   color: #ccc;
 }
 
-.option h5 {
+.option h4 {
   font-size: 2.5rem;
   color: #fff;
   overflow-x: hidden;
@@ -115,10 +115,10 @@
   .contactRight form {
     grid-template-columns: 1fr;
   }
-  .option h4 {
+  .option h3 {
     font-size: 2rem;
   }
-  .option h5 {
+  .option h4 {
     font-size: 1.5rem;
   }
   .option a {
@@ -131,10 +131,10 @@
   .container {
     grid-template-columns: 1fr;
   }
-  .option h4 {
+  .option h3 {
     font-size: 2.5rem;
   }
-  .option h5 {
+  .option h4 {
     font-size: 1.3rem;
   }
   .contactRight {

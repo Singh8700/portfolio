@@ -29,7 +29,7 @@ const About=()=>{
     <Animation/>
     <div className={`transformX ${style.aboutUs}`}>
     <section id="about" className="transX">
-     <h5 className={`scales h5`}>Get To Know</h5>
+     <h4 className={`scales h5`}>Get To Know</h4>
      <h2 className={`scales h2`}>About Me </h2>
      <HeroSection myData={datas}/>
     <div className={`container ${style.about}`}>

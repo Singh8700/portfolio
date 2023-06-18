@@ -19,7 +19,7 @@ const Project=()=>{
             <article className={style.card}>
             {element.news?
             <span className={style.news}>
-            <img src={element.tit}/>
+            <img src={element.tit} alt="New Projects"/>
             </span>:<span></span>
             }
             <div className={style.imgs}>

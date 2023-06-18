@@ -72,7 +72,10 @@ h3 {
   font-size: 1.8rem;
   font-weight: 400;
 }
-
+h4{
+  text-align: center;
+  color:#aaa;
+}
 p, button {
   color: ${({ theme }) => theme.colors.text};
   font-size: 1.65rem;
