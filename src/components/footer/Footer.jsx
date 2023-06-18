@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { Button } from "../../templates/Button";
-import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaDiscord, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -38,24 +38,27 @@ const Footer = () => {
                 <input type="submit" value="subscribe" className="btn" />
               </form>
             </div>
-      {/*<div className="footer-social">
+      <div className="footer-social">
               <h3>Follow Us</h3>
              <div className="footer-social--icons">
                 <div>
+                  <a href="https://github.com/Singh8700">
                   <FaDiscord className="icons" />
-                </div>
-                <div>
-                  <FaInstagram className="icons" />
-                </div>
-                <div>
-                  <a
-                    href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
-                    target="_blank">
-                    <FaYoutube className="icons" />
                   </a>
                 </div>
+                <div>
+                <a href="https://instagram.com/83_rohit?igshid=MzNlNGNkZWQ4Mg==">
+                  <FaInstagram className="icons" />
+                </a>
+                </div>
+                 <div>
+                <a href="https://bit.ly/rohit-port">
+                  <FaWhatsapp className="icons" />
+                </a>
+                </div>
               </div>
-            </div>*/}
+            </div>
+            <br/>
             <div className="footer-contact">
             <div>
               <h3>Call Us</h3>

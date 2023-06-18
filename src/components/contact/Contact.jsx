@@ -20,12 +20,6 @@ const Contact=(props)=>{
       
   };
   
- /* const handlerClick=()=>{
-    return(
-      
-    /*alert("wor")
-      )
-  }*/
   
   return(
     <section id="contact" className="transformX">

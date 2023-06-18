@@ -33,13 +33,7 @@ const About=()=>{
      <h2 className={`scales h2`}>About Me </h2>
      <HeroSection myData={datas}/>
     <div className={`container ${style.about}`}>
-    {/*
-       <div className={style.aboutMe}>
-        <div className={`${style.aboutMeImg}`} >
-         {/* <img src={pic} alt={pic} />
-       
-        </div>
-      </div>*/}
+
       <div className={style.aboutContent}>
        <div className={style.aboutCards}>
          <h2 className="tit"> Experience </h2>

@@ -3,13 +3,7 @@ import {useState} from 'react';
 import style from './Nav.module.css';
 
 import { Link} from "react-router-dom";
-//import { useLocation } from 'react-router-dom';
-/*
-import {AiOutlineHome} from 'react-icons/ai'
-import {AiOutlineUser} from 'react-icons/ai'
-import {BiBook} from 'react-icons/bi';
-import {RiServiceLine} from 'react-icons/ri'
-import {BiMessageSquareDetail} from 'react-icons/bi'*/
+
 import list from "./NavList";
 const Nav=(props)=>{
   
