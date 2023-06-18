@@ -1,3 +1,12 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /*
+Disallow: /.webp$
+Disallow: /wp-admin/
+
+Crawl-delay: 1
+Allow: /experience 
+Allow: /contact
+Allow: /services
+Allow: /about
+Sitemap : https://singh8700.githubio/portfolio/sitemap.xml
