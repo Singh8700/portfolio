@@ -44,16 +44,19 @@ const Footer = () => {
                 <div>
                   <a href="https://github.com/Singh8700">
                   <FaDiscord className="icons" />
+                  GitHub
                   </a>
                 </div>
                 <div>
                 <a href="https://instagram.com/83_rohit?igshid=MzNlNGNkZWQ4Mg==">
                   <FaInstagram className="icons" />
+                  Instagram 
                 </a>
                 </div>
                  <div>
                 <a href="https://bit.ly/rohit-port">
                   <FaWhatsapp className="icons" />
+                  WhatsApp 
                 </a>
                 </div>
               </div>
@@ -98,14 +101,18 @@ const Wrapper = styled.section`
     max-width: 80vw;
     margin:5rem auto 0;
     padding: 2rem 4rem;
-    color:#aaa;
-    background-color: ${({ theme }) => theme.colors.bg};
+    
+    background-color: ${({ theme }) => theme.colors.box};
     border-radius: 1rem;
     box-shadow: ${({ theme }) => theme.colors.shadowSupport};
     transform: translateY(-50%);
     .grid div:last-child {
       justify-self: center;
       align-self: center;
+    }
+    h3{
+    font-weight: 900;
+    color:#444;
     }
   }
 
@@ -128,18 +135,28 @@ const Wrapper = styled.section`
     .footer-social--icons {
       display: flex;
       gap: 2rem;
-
+      justify-contetn:center;
+      align-items:center;
       div {
-        padding: 1rem;
-        border-radius: 50%;
-        border: 2px solid ${({ theme }) => theme.colors.white};
-
+        padding:1rem;
+        text-align:center;
+        a{
+        color:#fff;
+        font-size:1.2rem;
+        display:flex;
+        flex-direction:column;
+        margin:1rem auto;
         .icons {
           color: ${({ theme }) => theme.colors.white};
-          font-size: 2.4rem;
+          font-size: 4.4rem;
           position: relative;
           cursor: pointer;
+          border:1px solid #fff;
+          padding:1rem;
+          border-radius:50%;
+          margin:0.4rem auto;
         }
+      }
       }
     }
   }

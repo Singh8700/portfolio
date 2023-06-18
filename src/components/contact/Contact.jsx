@@ -37,7 +37,7 @@ const Contact=(props)=>{
             
          </span>
          <h3>{element.title}</h3>
-         <h5>{element.add}</h5>
+         <h3 className={style.h3}>{element.add}</h3>
          <a href={element.link} traget="__blank" className="btn btn-primary">Send Me</a>
        </article>
      </div>

@@ -11,6 +11,7 @@ const Theme = {
     border:"rgba(98,84,243,0.05)",
     heading:"#fff",
     hr:"#fff",
+    box:"#fff",
     helper:"#0af",
     gradient:"linear-gradient(130deg, rgba(0,0,0,0.3),rgba(0,0,0,0.8))",
     shadow:"rgba(0,0,0,0.2) 0px 1px 3px 0px, rgba(27,31,35,0.15) 0px 1px 4px",

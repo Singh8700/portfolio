@@ -22,16 +22,20 @@
   border-radius: 2rem;
   margin: 2rem auto 1.5rem;
   padding: 1rem;
+  
   //font-size: 0.7rem;
   transition: var(--transition-all);
   h3{
     font-size: 3.5rem;
     color: #ccc;
+    text-shadow: 2px 2px 2px #000;
   }
-  h4{
-    font-size: 2.5rem;
+  
+  .h3{
+    font-size: 1.5rem;
     color:#fff;
-    overflow-x: hidden;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
   }
 }
 .option:hover{
@@ -126,8 +130,8 @@
     
   }
    .option {
-   h3{
-    font-size: 2.5rem;
+   .h3{
+    font-size: 1.8rem;
   }
   h4{
     font-size: 1.3rem;
