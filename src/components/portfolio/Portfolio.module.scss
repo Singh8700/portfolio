@@ -52,14 +52,16 @@ section{
       font-family: Georgia;
       padding: 0 auto;
       
-      h3{
+      h2{
         font-size: 2rem;
         color:var(--color-primary);
-        font-weight: bold;
+        font-weight: 1000;
         word-break: all;
+        
       }
-      h5{
-        font-size: 1rem;
+      h3{
+        font-size: 1.5rem;
+        font-weight: 600;
         color:var(--color-light);
       }
       a{

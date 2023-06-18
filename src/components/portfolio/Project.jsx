@@ -27,7 +27,7 @@ const Project=()=>{
             </div>
             <div className={`${style.title}`}>
               <h2 className="cols-title">{element.title}</h2>
-              <h4>{element.small}</h4>
+              <h3>{element.small}</h3>
              <a href={element.link} className="btn btn-primary">
               Live Preview
               </a>

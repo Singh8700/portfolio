@@ -50,15 +50,16 @@ section {
   padding: 0 auto;
 }
 
-.cards .card .title h3 {
+.cards .card .title h2 {
   font-size: 2rem;
   color: var(--color-primary);
-  font-weight: bold;
+  font-weight: 1000;
   word-break: all;
 }
 
-.cards .card .title h5 {
-  font-size: 1rem;
+.cards .card .title h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
   color: var(--color-light);
 }
 

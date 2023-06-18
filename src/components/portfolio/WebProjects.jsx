@@ -20,8 +20,8 @@ const WebProjects=()=>{
               <img src={element.imgs} alt={element.title} className={element.cll}/>
             </div>
             <div className={style.title}>
-              <h3>{element.title}</h3>
-              <h5>{element.small}</h5>
+              <h2>{element.title}</h2>
+              <h3>{element.small}</h3>
               <a href={element.link} className="btn btn-primary">View Demo</a>
             </div>
           </article>

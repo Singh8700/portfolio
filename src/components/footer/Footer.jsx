@@ -27,7 +27,7 @@ const Footer = () => {
         <footer>
           <div className="container grid grid-three-column">
             <div className="footer-about">
-              <h1>Rohit</h1>
+              <h1>Rohit@8700</h1>
               <p>DCA Tutor, Web Designer (like :- HTML, CSS JS & other library's or frameworks), Tally also</p>
             </div>
             <div className="footer-subscribe">
