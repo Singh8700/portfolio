@@ -175,8 +175,9 @@ input, textarea{
     grid-template-columns:repeat(2,1fr)
   }
 .cols{
-    width:calc(100% - 60px);
+    width:calc(100% - 20px);
     columns:3;
+    column-gap:2px;
   }
   .cols .cols-title{
     margin:0rem auto;
@@ -196,9 +197,6 @@ input, textarea{
   }
 .grid-col-three{
   grid-template-columns:1fr;
-}
-.flex{
-  flex-direction:column;
 }
     }
     @media (max-width: ${({ theme }) => theme.media.small}) {

@@ -101,7 +101,7 @@ const Footer = () => {
         </div>
           <div className="footer-bottom--section">
             <hr />
-            <div className="container flex">
+            <div className="container flexs">
               <h3>
                 @{new Date().getFullYear()} Rohit@8700. All Rights Reserved
               </h3>
@@ -199,7 +199,7 @@ const Wrapper = styled.section`
       height: 0.1px;
     }
   }
-  .flex{
+  .flexs{
   display:flex;
   justify-contetn:scape-around;
   align-items:center;
@@ -256,6 +256,9 @@ const Wrapper = styled.section`
       div{
         text-align:left;
       }
+    }
+    .flexs{
+      flex-direction:column;
     }
   }
  
