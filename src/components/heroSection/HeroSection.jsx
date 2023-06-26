@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const HeroSection = ({myData})=>{
-  const { title,img, textHighlight,btn,width} = myData;
+  const { title,img, textHighlight,btn,width,texts,center} = myData;
   
   const Wrapper = styled.section`
   padding: 5rem 8rem;
@@ -24,10 +24,13 @@ const HeroSection = ({myData})=>{
     word-break:all;
     overflow:hidden;
     width:400px;
+    word-break:all;
     p {
       margin: 0.5rem 0;
       text-align:left;
       font-weight:bold;
+      color:#aaa;
+      font-size:2.5rem;
     }
     .title-highlight{
       color:#aaa;
@@ -189,8 +192,12 @@ const HeroSection = ({myData})=>{
           <div className="hero-section-data">
             <p className="intro-data">Hello I'm</p>
             <h1 data-text={`${title}`} className="text-animate">{title}</h1>
+            <p>
             <p className="title-highlight">
              {textHighlight}
+            </p>
+            
+             {texts}
               <br />
             </p>
               {btn}

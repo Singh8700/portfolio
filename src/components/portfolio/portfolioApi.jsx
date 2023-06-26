@@ -10,7 +10,7 @@ import poster01 from "../../img/Poster01.webp";
 import poster02 from "../../img/Poster02.webp";
 import logo01 from "../../img/Logo01.webp";
 import logo02 from "../../img/Logo02.webp";
-import logo03 from "../../img/Logo03.webp";
+//import logo03 from "../../img/Logo03.webp";
 import New from "../../assets/new.png";
 
 const Pic=[
@@ -89,7 +89,7 @@ const Poster=[
       cl:"transY",
       cll:"transX",
       small:"Client Project",
-      link:poster01
+      link:"https://drive.google.com/file/d/1ANWjpI-hjgAr359mQsFs4PGGU4gp4I_2/view?usp=drive_link"
     }
     ,{
       key:2,
@@ -98,7 +98,15 @@ const Poster=[
       cl:"transX",
       cll:"transY",
       small:"Client Project",
-      link:poster02
+      link:"https://drive.google.com/file/d/1q6ZgZicakWIhPmiE_JrYaXY3h3Q76z_b/view?usp=drive_link"
+    },{
+      key:3,
+     imgs:poster02,
+      title:"Poster Projects",
+      cl:"transX",
+      cll:"transY",
+      small:"Client Project",
+    link:"https://drive.google.com/file/d/1bJfgrzG33_BBhBXAGqLkekAJhFpQSCb-/view?usp=drive_link"
     }
     ];
  const Logos=[
@@ -118,7 +126,8 @@ const Poster=[
       title:"Logo Projects",
       small:"Client Project",
       link:logo02
-    },{
+    }
+    /*,{
       key:3,
      imgs:logo03,
      cl:"transY",
@@ -126,7 +135,7 @@ const Poster=[
       title:"Logo Projects",
       small:"Client Project",
       link:logo03
-    }
+    }*/
   ];
   const Design=[
     {

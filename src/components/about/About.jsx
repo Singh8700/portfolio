@@ -18,17 +18,19 @@ const About=()=>{
  },[])
   const datas = {
     img:imgs,
-    title:"Rohit_Singh......",
-    textHighlight:`Hi, I am Rohit.I am currently doing my internship as a tutor for the DCA course. Before this,I have also worked as a computer operator in Covid-19 at the Vaccination Center. `,
-    btn:"",
+    title:"Rohit_Singh.......",
+    textHighlight:`Hi, I am Rohit.
+     `,
+  texts:`But my Full Name is Rohit Kumar Singh. Presently I am working as a DCA Tutor in RIIT Infotech Pvt. Ltd. Company. This job is not full time only part time. Before this,I have also worked as a computer operator in Covid-19 at the Vaccination Center. 
+  `,
     width:"35%"
   }
 
   return(
     <>
     <Animation/>
-    <div className={`transformX ${style.aboutUs}`}>
-    <section id="about" className="transX">
+    <div id="about"  className={`transformX ${style.aboutUs}`}>
+    <section className="transX">
      <h4 className={`scales h5`}>Get To Know</h4>
      <h2 className={`scales h2`}>About Me </h2>
      <HeroSection myData={datas}/>

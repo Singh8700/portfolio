@@ -18,8 +18,10 @@ const Header=()=>{
   const datas = {
     img:imgs,
     title:"Rohit........................",
-    textHighlight:`Hi, I am Rohit.
-   I am currently doing my internship as a tutor for the DCA course. Before this,I have also worked as a computer operator in Covid-19 at the Vaccination Center. `,
+    textHighlight:`Hi, I am Rohit.`,
+    texts:`I am a Web-Designer & DCA Tutor.
+    Presently I am working as DCA Tutor in RIIT Infotech Pvt Ltd Company. This job is not full time only part time. 
+  `,
    btn:<CV />,
    width:"20%"
   }

@@ -17,7 +17,9 @@ const Footer = () => {
 
             <div>
               <Button className="btn hireme-btn">
-                <NavLink to="/contact"> Get Started </NavLink>
+                <NavLink to="/contact"> 
+                <a href="#contact">Get Started </a>
+                </NavLink>
               </Button>
             </div>
           </div>
@@ -25,9 +27,11 @@ const Footer = () => {
         {/* footer section */}
 
         <footer>
-          <div className="container grid grid-three-column">
+        <div className="grid grid-col-three">
+          <div className="container">
             <div className="footer-about">
-              <h1>Rohit@8700</h1>
+              <h1>Rohit</h1>
+              <h2>Rohit@8700</h2>
               <p>DCA Tutor, Web Designer (like :- HTML, CSS JS & other library's or frameworks), Tally also</p>
             </div>
             <div className="footer-subscribe">
@@ -61,8 +65,29 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <br/>
-            <div className="footer-contact">
+          </div>
+      
+      <div className="footer-link-section">
+        <ul className="container">
+        <NavLink to="/">
+         <h3>Home</h3>
+        </NavLink>
+       <NavLink to="/about">
+         <h3>About</h3>
+        </NavLink>
+      <NavLink to="/services">
+         <h3>Projects</h3>
+      </NavLink>
+      <NavLink to="/experience">
+         <h3>Skills</h3>
+      </NavLink>
+      <NavLink to="/contact">
+         <h3>Contact Us</h3>
+      </NavLink>
+        </ul>
+        </div>
+    <div className="footer-contact">
+      <div className="container">
             <div>
               <h3>Call Us</h3>
               <a href="tel:918700750589"><h3>+91 8700750589</h3></a>
@@ -71,16 +96,16 @@ const Footer = () => {
                <h3>E-Mail Us</h3>
                <a href="mailto:rohitfolio8700@gmail.com"><h3>rohitfolio8700@gmail.com</h3></a>
               </div>
-            </div>
-          </div>
-
+       </div>
+     </div>
+        </div>
           <div className="footer-bottom--section">
             <hr />
-            <div className="container grid grid-two-column">
+            <div className="container flex">
               <h3>
                 @{new Date().getFullYear()} Rohit@8700. All Rights Reserved
               </h3>
-              <div>
+              <div className="container">
                 <p>PRIVACY POLICY</p>
                 <p>TERMS & CONDITIONS</p>
               </div>
@@ -164,18 +189,24 @@ const Wrapper = styled.section`
   background-color:${({theme})=>theme.colors.btns};
   border-radius:1.5rem;
  }
-  .footer-bottom--section {
-    padding-top: 8rem;
 
+  .footer-bottom--section {
+    width:100%;
+    padding-top: 8rem;
     hr {
       margin-bottom: 2rem;
       color: ${({ theme }) => theme.colors.hr};
       height: 0.1px;
     }
   }
+  .flex{
+  display:flex;
+  justify-contetn:scape-around;
+  align-items:center;
+  }
 .footer-subscribe form input{
   width:400px; 
-  margin: 2.5rem;
+  margin:2.5rem 0;
 }
   @media (max-width: ${({ theme }) => theme.media.tab}) {
   margin-top:20rem;

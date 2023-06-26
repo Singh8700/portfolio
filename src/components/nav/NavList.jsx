@@ -8,13 +8,13 @@ const list = [
      id:3,
      icons:<BiBook/>,
      title:"Experience",
-     text:"Experience",
+     text:"experience",
      link:"/experience"
    },{
      id:4,
      icons:<RiServiceLine/>,
      title:"About",
-     text:"About",
+     text:"about",
      link:"/about"
    },{
      id:1,
@@ -25,13 +25,13 @@ const list = [
      id:2,
      icons:<AiOutlineUser/>,
      title:"Projects",
-     text:"Projects",
+     text:"projects",
      link:"/services"
    },{
      id:5,
      icons:<BiMessageSquareDetail/>,
      title:"Contact",
-     text:"Contact",
+     text:"contact",
      link:"/contact"
    }
  ]

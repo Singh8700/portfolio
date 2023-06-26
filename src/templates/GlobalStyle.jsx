@@ -13,9 +13,8 @@ export const GlobalStyle = createGlobalStyle`
 html {
 font-size:62.5%;
 scroll-behavior: smooth;
-  /* 1rem = 10px */
-  overflow-x: hidden;
-  
+/* 1rem = 10px */
+overflow-x: hidden;
 }
 
 body {
@@ -41,10 +40,11 @@ body::-webkit-scrollbar-thumb {
 }
 .cols{
 width:100%;
-columns: 2;
-column-gap:25px;
+columns: 4;
+column-gap:20px;
 break-inside: avoid;
 margin:1rem auto;
+padding:3.5rem;
 }
 h1,
 h2,
@@ -90,8 +90,17 @@ a {
 li {
   list-style: none;
 }
+${"" /* resuable code section  */}
+.grid{
+width:100%;
+display:grid;
+gap:20px;
 
+}
+.grid-col-three{
+grid-template-columns:repeat(3,1fr);
 
+}
 ${"" /* resuable code section  */}
 
 .container {
@@ -162,6 +171,9 @@ input, textarea{
     max-width: 130rem;
     padding: 0 3.2rem;
   }
+  .grid-col-three{
+    grid-template-columns:repeat(2,1fr)
+  }
 .cols{
     width:calc(100% - 60px);
     columns:3;
@@ -181,9 +193,13 @@ input, textarea{
     width:calc(100% - 40px);
     margin:0.5rem auto;
     columns:2;
-    
   }
-
+.grid-col-three{
+  grid-template-columns:1fr;
+}
+.flex{
+  flex-direction:column;
+}
     }
     @media (max-width: ${({ theme }) => theme.media.small}) {
     .cols{
