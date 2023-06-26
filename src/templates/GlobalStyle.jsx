@@ -175,9 +175,9 @@ input, textarea{
     grid-template-columns:repeat(2,1fr)
   }
 .cols{
-    width:calc(100% - 20px);
+    width:calc(100% - 40px);
     columns:3;
-    column-gap:2px;
+    column-gap:20px;
   }
   .cols .cols-title{
     margin:0rem auto;
@@ -201,7 +201,7 @@ input, textarea{
     }
     @media (max-width: ${({ theme }) => theme.media.small}) {
     .cols{
-    width:calc(100% - 30px);
+    width:calc(100% - 0px);
     columns:1;
   }
     }
