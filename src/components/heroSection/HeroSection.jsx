@@ -60,6 +60,7 @@ const HeroSection = ({myData})=>{
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-direction:column;
     border-radius:2rem;
     border:10px solid ${({theme})=>theme.colors.bgColors};
       border-left:0px;
@@ -67,6 +68,10 @@ const HeroSection = ({myData})=>{
      img{
      border-radius:1.8rem 1rem 1.8rem 1.8rem;
        box-shadow:-1px -1px 10px ${({theme})=>theme.colors.bgColors},5px 5px 10px #000;
+     }
+     figurecaption{
+       font-size:1.5em;
+       font-family:Georgia;
      }
     &:before{
         content:'';
@@ -110,7 +115,7 @@ const HeroSection = ({myData})=>{
       border-radius:2rem;
     img{
       width:100%;
-      height:30rem;
+      height:40rem;
       position:relative;
     }
     }
@@ -203,8 +208,11 @@ const HeroSection = ({myData})=>{
               {btn}
           </div>
          <div className="hero-section-image">
-            <figure>
+            <figure className="flex scales">
               <img src={img} alt="Hreo section images"/>
+              <figurecaption>
+                  It's Me
+              </figurecaption>
             </figure>
           </div>
         </div>

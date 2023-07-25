@@ -27,6 +27,11 @@ const Header=()=>{
   }
   return(
    <>
+   <div className="theme">
+     <a href="https://singh8700.github.io/portfolio2">
+                Next Theme &nbsp;
+     </a>
+   </div>
    <HeroSection myData={datas}/>
    <Project/>
    <Contact/>

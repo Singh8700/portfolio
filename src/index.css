@@ -95,7 +95,23 @@ a{
 a:hover{
   color:var(--color-bg);
 }
-
+.theme{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding:0.5em 2rem;
+}
+.theme a{
+  font-size: 2em;
+  border-radius: 1rem;
+  padding:0.2em 0.5em;
+  border:1px inset var(--color-primary);
+  transition: 0.5s;
+}
+.theme a:hover,.theme a:active{
+  background: var(--color-primary-variant);
+  color:var(--color-white);
+}
   .tit{
   width:100%;
   text-align: center;

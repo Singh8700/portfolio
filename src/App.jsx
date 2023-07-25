@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import {
  useLocation,
   Routes,
@@ -23,6 +23,9 @@ const App = () =>{
   const location = useLocation();
   const path = location.pathname;
   const [alerts,setAlerts]=useState(null);
+  useEffect(()=>{
+    window.scrollTo({top:0, behaviour:"smooth"})
+  },[path])
   const showAlert=(msg)=>{
     setAlerts(msg)
     setTimeout(()=>{
