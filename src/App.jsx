@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Theme from "./templates/Themes"
 import {ThemeProvider} from "styled-components"
+import MouseEvent from "./components/mouse/MouseEvent"
 import {GlobalStyle} from "./templates/GlobalStyle"
 import Header from "./components/header/Header";
 import Maps from "./components/maps/Maps"
@@ -14,11 +15,13 @@ import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
+
 import Animation from "./Animation";
 import Alerts from "./components/alerts/Alerts";
 import Footer from "./components/footer/Footer";
 import Error from "./components/error/Error"
 import HeroSection from "./components/heroSection/HeroSection"
+
 const App = () =>{
   const location = useLocation();
   const path = location.pathname;
@@ -26,6 +29,7 @@ const App = () =>{
   useEffect(()=>{
     window.scrollTo({top:0, behaviour:"smooth"})
   },[path])
+  
   const showAlert=(msg)=>{
     setAlerts(msg)
     setTimeout(()=>{
@@ -37,6 +41,7 @@ const App = () =>{
    <>
    <ThemeProvider theme={Theme}>
    <GlobalStyle/>
+   <MouseEvent/>
    <Alerts msg={alerts}/>
    <Animation/>
    <Routes>
