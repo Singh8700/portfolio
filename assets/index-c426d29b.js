@@ -316,7 +316,7 @@ input, textarea{
     columns:1;
   }
     }
-`,F2="/portfolio/assets/rohit@8700-5553a2e1.pdf",j2=()=>{const e=_i.div`
+`,F2="/portfolio/assets/rohit@8700-c25ae33a.pdf",j2=()=>{const e=_i.div`
   margin-top: 2.5rem;
   gap:3rem;
   display:flex;
