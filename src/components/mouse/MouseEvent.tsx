@@ -52,11 +52,7 @@ const Warpper=styled.div`
   height:10px;
   border-radius: 50%;
   background: var(--wht);
+  transition:all 0.5s ease-in;
   z-index:9999;
-}
-@media(max-width:${({theme})=>theme.media.mobile}){
-  #minicircle{
-    transition:all 0.5s ease-in;
-  }
 }
 `

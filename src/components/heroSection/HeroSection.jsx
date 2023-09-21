@@ -5,14 +5,13 @@ const HeroSection = ({myData})=>{
   
   const Wrapper = styled.section`
   padding: 5rem 8rem;
-  max-width:100%;
   img {
     min-width: 10rem;
     height: 20rem;
     background-color:var(--color-bg);
   }
   .flex{
-  width:100%;
+  max-width:100%;
   display:flex;
   justify-content:space-around;
   align-items:center;
@@ -20,7 +19,7 @@ const HeroSection = ({myData})=>{
   flex-wrap:wrap-reverse;
   }
   .hero-section-data {
-    margin: 3rem 0;
+    margin: 3rem 3rem 3rem 0;
     word-break:all;
     overflow:hidden;
     width:400px;
@@ -49,7 +48,7 @@ const HeroSection = ({myData})=>{
     width:${width};
   }
   .hero-section-image {
-    max-width:500px;
+    max-width:150rem;
     height: auto;
     display: flex;
     justify-content: center;
@@ -192,7 +191,7 @@ const HeroSection = ({myData})=>{
 `;
   return (
     <Wrapper>
-     <div className="contianer">
+     <div className="container">
         <div className="flex">
           <div className="hero-section-data">
             <p className="intro-data">Hello I'm</p>

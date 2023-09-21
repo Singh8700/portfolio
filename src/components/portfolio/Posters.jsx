@@ -7,7 +7,7 @@ const Posters=()=>{
   return(
     <>
     <Animation/>
-  <div className={`container scales ${style.containers}`}>
+  <div className={`scales ${style.containers}`}>
    <div className={`${style.cards}`}>
       <h2 className="tit"> Live Projects </h2>
       <div className="cols">

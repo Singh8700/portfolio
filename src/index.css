@@ -60,7 +60,6 @@ body {
 }
 .containerScale{
   animation: zooming 200ms linear 1;
-
 }
 @keyframes zooming{
   from{

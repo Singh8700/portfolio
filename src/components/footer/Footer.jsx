@@ -7,7 +7,7 @@ import { FaDiscord, FaInstagram, FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-      <Wrapper>
+      <Wrapper className="contianer">
         <section className="contact-short">
           <div className="grid grid-two-column">
             <div>
@@ -27,7 +27,7 @@ const Footer = () => {
         {/* footer section */}
 
         <footer>
-        <div className="grid grid-col-three">
+        <div className="flex grid grid-col-three">
           <div className="container">
             <div className="footer-about">
               <h1>Rohit</h1>
@@ -85,7 +85,7 @@ const Footer = () => {
          <h3>Contact Us</h3>
       </NavLink>
         </ul>
-        </div>
+</div>
     <div className="footer-contact">
       <div className="container">
             <div>
@@ -123,10 +123,9 @@ const Wrapper = styled.section`
   bottom: 0%;
   padding:0rem 5rem;
   .contact-short {
-    max-width: 80vw;
+    max-width: 90vw;
     margin:5rem auto 0;
     padding: 2rem 4rem;
-    
     background-color: ${({ theme }) => theme.colors.box};
     border-radius: 1rem;
     box-shadow: ${({ theme }) => theme.colors.shadowSupport};
@@ -142,9 +141,10 @@ const Wrapper = styled.section`
   }
 
   footer {
-    padding: 10rem 4rem 15rem 0;
+    padding: 10rem 2rem 15rem;
+    max-width:90vvw;
     h1{
-      font-size:4rem;
+      font-size:4.8em;
       color: ${({ theme }) => theme.colors.hr};
       margin-bottom: 1rem;
       word-break:all;
@@ -153,9 +153,13 @@ const Wrapper = styled.section`
       color: ${({ theme }) => theme.colors.hr};
       margin-bottom: 1rem;
       word-break:all;
+      font-weight:bold;
+      font-size:2em;
     }
     p {
       color: ${({ theme }) => theme.colors.white};
+      font-size:1.15em;
+      font-weight:bold;
     }
     .footer-social--icons {
       display: flex;
@@ -189,7 +193,14 @@ const Wrapper = styled.section`
   background-color:${({theme})=>theme.colors.btns};
   border-radius:1.5rem;
  }
-
+.footer-contact{
+  width:50vw;
+  text-align:center;
+  > * h3{
+  text-align:left;
+  font-size:2rem;
+  }
+}
   .footer-bottom--section {
     width:100%;
     padding-top: 8rem;
