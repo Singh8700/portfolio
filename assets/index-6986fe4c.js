@@ -326,7 +326,7 @@ input, textarea{
     columns:1;
   }
     }
-`,gw="/portfolio/assets/rohit@8700-c25ae33a.pdf",vw=()=>{const e=Ei.div`
+`,gw="/portfolio/assets/rohit@8700-26a7130d.pdf",vw=()=>{const e=Ei.div`
   margin-top: 2.5rem;
   gap:3rem;
   display:flex;
