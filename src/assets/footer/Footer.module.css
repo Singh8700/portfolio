@@ -73,10 +73,9 @@ footer a {
     margin: 0 auto 3.5rem;
   }
 }
-
 /*==== small Screen ===*/
 @media screen and (max-width: 480px) {
   .logo {
     margin: 0 auto;
   }
-}
+}/*# sourceMappingURL=Footer.module.css.map */

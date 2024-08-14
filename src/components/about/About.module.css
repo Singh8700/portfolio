@@ -17,14 +17,12 @@
   width: 850px;
   overflow-x: hidden;
   margin: 0 auto;
-}
-
-/*
+} /*
 .aboutMe{
   width: 250px;
   height: 300px;
   border-radius: 2rem;
- 
+
   background: linear-gradient(45deg, transparent,var(--color-primary));
   display: flex;
   justify-content: center;
@@ -77,7 +75,6 @@
   align-self: center;
   flex-wrap: wrap;
 }
-
 .card .aboutCard {
   width: 100%;
   padding: 2px 10px;
@@ -90,7 +87,6 @@
   transition: var(--transition-all);
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 15px rgba(255, 255, 255, 0.15), inset -3px -3px 20px rgba(0, 0, 0, 0.5);
 }
-
 .card .aboutCard h5 {
   font-size: 2.5rem;
   color: #ccc;
@@ -130,7 +126,6 @@
   overflow-x: hidden;
   align-items: center;
 }
-
 .pera p {
   width: 100%;
   margin: 2rem 0 1.2rem;
@@ -153,7 +148,6 @@
     align-items: center;
   }
 }
-
 /*====medium Screen ===*/
 @media screen and (max-width: 1024px) {
   /*.aboutMe{
@@ -168,7 +162,6 @@
     margin-top: 2rem;
   }
 }
-
 /*==== small Screen ===*/
 @media screen and (max-width: 900px) {
   /*.aboutUs{
@@ -207,4 +200,4 @@
   .pera p {
     font-size: 1.4rem;
   }
-}
+}/*# sourceMappingURL=About.module.css.map */

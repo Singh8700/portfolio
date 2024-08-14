@@ -111,9 +111,8 @@ h1 {
     color: red;
   }
 }
-
 .me:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -141,13 +140,12 @@ h1 {
     margin: 1rem auto 0;
   }
 }
-
 /*==== small Screen ===*/
 @media screen and (max-width: 900px) {
   header {
     height: 100vh;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9), black), url("../../img/logo.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9), rgb(0, 0, 0)), url("../../img/logo.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
     transition: var(--transition-all);
@@ -187,7 +185,6 @@ h1 {
     height: 25rem;
   }
 }
-
 /*==== small Screen ===*/
 @media screen and (max-width: 480px) {
   header {
@@ -196,15 +193,14 @@ h1 {
     padding: 2rem;
   }
   /*  .me{
-   position: absolute;
-   top:50%;
-   left:50%;
-   transform: translate(-50%,0%);
-   width:15rem;
-   height:20rem;
-  }*/
+     position: absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%,0%);
+     width:15rem;
+     height:20rem;
+    }*/
 }
-
 /*==== small Screen ===*/
 @media screen and (max-width: 360px) {
   header {
@@ -212,11 +208,11 @@ h1 {
     overflow: hidden;
   }
   /*  .me{
-   position: absolute;
-   top:80%;
-   left:50%;
-   transform: translate(-50%,0%);
-   width:15rem;
-   height:25rem;
-  }*/
-}
+     position: absolute;
+     top:80%;
+     left:50%;
+     transform: translate(-50%,0%);
+     width:15rem;
+     height:25rem;
+    }*/
+}/*# sourceMappingURL=Header.module.css.map */

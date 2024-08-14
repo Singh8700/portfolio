@@ -8,6 +8,7 @@
   font-family: Georgia;
   overflow-x: hidden;
   padding-bottom: 5rem;
+  overflow: hidden;
 }
 
 .container > div {
@@ -19,6 +20,7 @@
   border: 1px solid transparent;
   text-align: center;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 15px rgba(255, 255, 255, 0.15), inset -3px -3px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .container > div:hover {
@@ -38,9 +40,11 @@
 }
 
 .content {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 1.8rem;
+  grid-template-columns: repeat(1, 2fr);
+  row-gap: 5rem;
+  place-items: center;
 }
 
 .details {
@@ -72,7 +76,6 @@
     grid-template-columns: 1fr 1fr;
   }
 }
-
 /*====medium Screen ===*/
 @media screen and (max-width: 1024px) {
   .container {
@@ -84,7 +87,6 @@
     margin: 0 auto;
   }
 }
-
 /*==== small Screen ===*/
 @media screen and (max-width: 900px) {
   .container > div h3 {
@@ -103,4 +105,4 @@
   .content .details .small {
     font-size: 1.8rem;
   }
-}
+}/*# sourceMappingURL=Experience.module.css.map */

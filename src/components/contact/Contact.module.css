@@ -24,13 +24,11 @@
   padding: 1rem;
   transition: var(--transition-all);
 }
-
 .option h3 {
   font-size: 3.5rem;
   color: #ccc;
   text-shadow: 2px 2px 2px #000;
 }
-
 .option .h3 {
   font-size: 1.5rem;
   color: #fff;
@@ -51,13 +49,11 @@
   padding-left: 10px;
   margin: 0 auto;
 }
-
 .contactRight form {
   display: grid;
   grid-template-columns: 1fr;
   margin: 0.5rem auto;
 }
-
 .contactRight form .btn2 {
   padding: 14px 60px;
   font-size: 18px;
@@ -69,9 +65,7 @@
 .contactRight .btn.btn2 {
   display: inline-block;
   background: #ff667f;
-}
-
-/*
+} /*
 .contactRight form{
   width:100%;
 }*/
@@ -127,7 +121,6 @@
     padding: 0.3rem 0.5rem;
   }
 }
-
 /*==== small Screen ===*/
 @media screen and (max-width: 600px) {
   .container {
@@ -148,4 +141,4 @@
   form input, form textarea {
     font-size: 1.5rem;
   }
-}
+}/*# sourceMappingURL=Contact.module.css.map */

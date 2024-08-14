@@ -39,7 +39,7 @@ body::-webkit-scrollbar-thumb {
     background-clip: content-box;
 }
 .cols{
-  width:100vw;
+width:100%;
 display:flex;
 justify-content: center;
 align-items: center;
@@ -48,7 +48,6 @@ columns: 5;
 column-gap:20px;
 break-inside: avoid;
 column-width:250px;
-place-item:center;
 margin:1rem auto;
 padding:3rem;
 
