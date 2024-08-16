@@ -151,7 +151,7 @@ const HeroSection = ({myData})=>{
     border:0;
     img{
     border-radius:2rem;
-      width:calc(100% - 110px);
+      width:calc(100% - 60px);
       position:relative;
       border:5px inset ${({theme})=>theme.colors.bgColors};
       border-right:0px;
@@ -208,7 +208,7 @@ const HeroSection = ({myData})=>{
           </div>
          <div className="hero-section-image">
             <figure className="flex scales">
-              <img src={img} alt="Hreo section images"/>
+              <img src={img} alt="Hreo images"/>
               <figurecaption>
                   It's Me
               </figurecaption>
